@@ -2,7 +2,13 @@ package by.itacademy.timoshenko.edostavka.ui.pages.registration;
 
 import by.itacademy.timoshenko.edostavka.ui.driver.Driver;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class RegistrationPage {
     private WebDriver driver;
@@ -40,10 +46,30 @@ public class RegistrationPage {
     }
 
     public String getErrorMessageText(String input) {
-        return driver.findElement(By.xpath(String.format(RegistrationLocators., input))).getText();
+        return driver.findElement(By.xpath(String.format(RegistrationLocators.ERROR_MESSAGE_CREDENTIAL, input))).getText();
+    }
+
+    public String getErrorMessagePhoneText() {
+        return driver.findElement(By.xpath(RegistrationLocators.ERROR_MESSAGE_PHONE)).getText();
+    }
+
+    public String getErrorMessagePasswordText() {
+        return driver.findElement(By.xpath(RegistrationLocators.ERROR_MESSAGE_PASSWORD)).getText();
+    }
+
+    public String getErrorMessageAgreementText() {
+        return driver.findElement(By.xpath(RegistrationLocators.ERROR_MESSAGE_AGREEMENT)).getText();
+    }
+
+    public void fillInputIncorrectCredential(String input, String value) {
+        driver.findElement(By.xpath(String.format(RegistrationLocators.INPUT_CREDENTIAL, input))).sendKeys(value);
     }
 
     public void clickSubmitButton() {
-        driver.findElement(By.xpath(RegistrationLocators.BUTTON_SUBMIT)).click();
+        WebElement element = driver.findElement(By.xpath(RegistrationLocators.BUTTON_SUBMIT));
+        ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight);");
+        Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(d -> element.isDisplayed());
+        element.click();
     }
 }

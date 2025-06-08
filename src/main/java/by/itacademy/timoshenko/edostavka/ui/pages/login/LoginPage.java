@@ -4,6 +4,11 @@ package by.itacademy.timoshenko.edostavka.ui.pages.login;
 import by.itacademy.timoshenko.edostavka.ui.driver.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class LoginPage {
     private WebDriver driver;
@@ -45,7 +50,10 @@ public class LoginPage {
     }
 
     public void clickSubmitButtonRegistration() {
-        driver.findElement(By.xpath(LoginLocators.SUBMIT_BUTTON_REGISTRATION)).click();
+        WebElement element = driver.findElement(By.xpath(LoginLocators.SUBMIT_BUTTON_REGISTRATION));
+        Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(d -> element.isDisplayed());
+        element.click();
     }
 
     public void clickSubmitButtonSupport() {

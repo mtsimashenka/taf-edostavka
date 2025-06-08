@@ -3,6 +3,7 @@ import by.itacademy.timoshenko.edostavka.ui.pages.registration.RegistrationPage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.JavascriptExecutor;
 
 public class RegistrationTest extends BaseTest {
     public final String TITLE_REGISTRATION_TEXT = "Регистрация";
@@ -20,6 +21,17 @@ public class RegistrationTest extends BaseTest {
     public final String LABEL_EMAIL_TEXT = "Email";
     public final String LABEL_PASSWORD_TEXT = "Пароль";
     public final String LABEL_PASSWORD_AGAIN = "Повторите пароль";
+    public final String ERROR_MESSAGE_NAME_TEXT = "Поле имя обязательно для заполнения";
+    public final String ERROR_MESSAGE_SURNAME_TEXT = "Поле фамилия обязательно для заполнения";
+    public final String ERROR_MESSAGE_INCORRECT_PATRONYMIC_TEXT = "Поле отчество введено в некорректном формате";
+    public final String ERROR_MESSAGE_PHONE_TEXT = "Номер введен некорректно";
+    public final String ERROR_MESSAGE_PASSWORD_TEXT = "Создание пароля обязательно";
+    public final String ERROR_MESSAGE_AGREEMENT_TEXT = "Необходимо согласие";
+    public final String ERROR_MESSAGE_INCORRECT_NAME_TEXT = "Поле имя введено в некорректном формате";
+    public final String ERROR_MESSAGE_INCORRECT_SURNAME_TEXT = "Поле фамилия введено в некорректном формате";
+    public final String ERROR_MESSAGE_INCORRECT_EMAIL_TEXT = "Адрес почты введен некорректно";
+    public final String ERROR_MESSAGE_INCORRECT_PASSWORD_TEXT = "Пароли не совпадают";
+
 
     protected LoginPage loginPage;
     protected RegistrationPage registrationPage;
@@ -53,6 +65,29 @@ public class RegistrationTest extends BaseTest {
     @Test
     public void checkEmptyInput() {
         registrationPage.clickSubmitButton();
+        Assertions.assertEquals(ERROR_MESSAGE_NAME_TEXT, registrationPage.getErrorMessageText("Имя *"));
+        Assertions.assertEquals(ERROR_MESSAGE_SURNAME_TEXT, registrationPage.getErrorMessageText("Фамилия *"));
+        Assertions.assertEquals(ERROR_MESSAGE_PHONE_TEXT, registrationPage.getErrorMessagePhoneText());
+        Assertions.assertEquals(ERROR_MESSAGE_PASSWORD_TEXT, registrationPage.getErrorMessagePasswordText());
+        Assertions.assertEquals(ERROR_MESSAGE_AGREEMENT_TEXT, registrationPage.getErrorMessageAgreementText());
+    }
 
+    @Test
+    public void checkIncorrectInput() {
+        registrationPage.fillInputIncorrectCredential("name", "1234");
+        registrationPage.fillInputIncorrectCredential("surname", "1234");
+        registrationPage.fillInputIncorrectCredential("patronymic", "1234");
+        registrationPage.fillInputIncorrectCredential("phone", "000000000");
+        registrationPage.fillInputIncorrectCredential("email", "test@test.xyz");
+        registrationPage.fillInputIncorrectCredential("password", "qwert");
+        registrationPage.fillInputIncorrectCredential("passwordAgain", "1234");
+        registrationPage.clickSubmitButton();
+        Assertions.assertEquals(ERROR_MESSAGE_INCORRECT_NAME_TEXT, registrationPage.getErrorMessageText("Имя *"));
+        Assertions.assertEquals(ERROR_MESSAGE_INCORRECT_SURNAME_TEXT, registrationPage.getErrorMessageText("Фамилия *"));
+        Assertions.assertEquals(ERROR_MESSAGE_INCORRECT_PATRONYMIC_TEXT, registrationPage.getErrorMessageText("Отчество"));
+        Assertions.assertEquals(ERROR_MESSAGE_INCORRECT_EMAIL_TEXT, registrationPage.getErrorMessageText("Email"));
+        Assertions.assertEquals(ERROR_MESSAGE_PHONE_TEXT, registrationPage.getErrorMessagePhoneText());
+        Assertions.assertEquals(ERROR_MESSAGE_INCORRECT_PASSWORD_TEXT, registrationPage.getErrorMessagePasswordText());
+        Assertions.assertEquals(ERROR_MESSAGE_AGREEMENT_TEXT, registrationPage.getErrorMessageAgreementText());
     }
 }
