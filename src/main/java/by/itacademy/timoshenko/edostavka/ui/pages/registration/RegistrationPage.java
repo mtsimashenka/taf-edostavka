@@ -61,13 +61,45 @@ public class RegistrationPage {
         return driver.findElement(By.xpath(RegistrationLocators.ERROR_MESSAGE_AGREEMENT)).getText();
     }
 
-    public void fillInputIncorrectCredential(String input, String value) {
+    public String getTitleCreateAccountText() {
+        return driver.findElement(By.xpath(RegistrationLocators.TITLE_CREATE_ACCOUNT)).getText();
+    }
+
+    public void fillInputCredential(String input, String value) {
         driver.findElement(By.xpath(String.format(RegistrationLocators.INPUT_CREDENTIAL, input))).sendKeys(value);
     }
 
+    public void clickCheckBox(String input) {
+        driver.findElement(By.xpath(String.format(RegistrationLocators.CHECKBOX_LABEL, input))).click();
+    }
+
+    public void clickCheckBoxAgreementButton() {
+        driver.findElement(By.xpath(String.format(RegistrationLocators.CHECK_BOX_BUTTON_SUBMIT))).click();
+    }
+
+    public void clickNextSubmitButton() {
+        WebElement element = driver.findElement(By.xpath(String.format(RegistrationLocators.NEXT_BUTTON_SUBMIT)));
+        Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(d -> element.isDisplayed());
+        element.click();
+    }
+
+    public void clickSubmitSelectAllButton() {
+       WebElement element = driver.findElement(By.xpath(String.format(RegistrationLocators.SELECT_ALL_BUTTON_SUBMIT)));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(d -> element.isDisplayed());
+        element.click();
+    }
+
+    public void clickAgreementSubmitButton() {
+        driver.findElement(By.xpath(String.format(RegistrationLocators.AGREEMENT_BUTTON_SUBMIT))).click();
+    }
+
+
     public void clickSubmitButton() {
         WebElement element = driver.findElement(By.xpath(RegistrationLocators.BUTTON_SUBMIT));
-        ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight);");
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
         Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(d -> element.isDisplayed());
         element.click();

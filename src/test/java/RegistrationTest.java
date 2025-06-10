@@ -3,10 +3,10 @@ import by.itacademy.timoshenko.edostavka.ui.pages.registration.RegistrationPage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.JavascriptExecutor;
 
 public class RegistrationTest extends BaseTest {
     public final String TITLE_REGISTRATION_TEXT = "Регистрация";
+    public final String TITLE_CREATE_ACCOUNT_TEXT = "Введите код";
     public final String BUTTON_SUBMIT_TEXT = "Далее";
     public final String COMMIT_PASSWORD_TEXT = "Пароль должен содержать от 8 до 50 символов, включая хотя бы одну цифру, одну строчную и одну прописную латинские буквы";
     public final String LABEL_PHONE_NUMBER_TEXT = "Номер телефона *";
@@ -31,6 +31,7 @@ public class RegistrationTest extends BaseTest {
     public final String ERROR_MESSAGE_INCORRECT_SURNAME_TEXT = "Поле фамилия введено в некорректном формате";
     public final String ERROR_MESSAGE_INCORRECT_EMAIL_TEXT = "Адрес почты введен некорректно";
     public final String ERROR_MESSAGE_INCORRECT_PASSWORD_TEXT = "Пароли не совпадают";
+    public final String ERROR_MESSAGE_IDENTICAL_PASSWORD_TEXT = "Пароли не соответствуют правилам";
 
 
     protected LoginPage loginPage;
@@ -74,13 +75,13 @@ public class RegistrationTest extends BaseTest {
 
     @Test
     public void checkIncorrectInput() {
-        registrationPage.fillInputIncorrectCredential("name", "1234");
-        registrationPage.fillInputIncorrectCredential("surname", "1234");
-        registrationPage.fillInputIncorrectCredential("patronymic", "1234");
-        registrationPage.fillInputIncorrectCredential("phone", "000000000");
-        registrationPage.fillInputIncorrectCredential("email", "test@test.xyz");
-        registrationPage.fillInputIncorrectCredential("password", "qwert");
-        registrationPage.fillInputIncorrectCredential("passwordAgain", "1234");
+        registrationPage.fillInputCredential("name", "1234");
+        registrationPage.fillInputCredential("surname", "1234");
+        registrationPage.fillInputCredential("patronymic", "1234");
+        registrationPage.fillInputCredential("phone", "000000000");
+        registrationPage.fillInputCredential("email", "test@test.xyz");
+        registrationPage.fillInputCredential("password", "qwert");
+        registrationPage.fillInputCredential("passwordAgain", "1234");
         registrationPage.clickSubmitButton();
         Assertions.assertEquals(ERROR_MESSAGE_INCORRECT_NAME_TEXT, registrationPage.getErrorMessageText("Имя *"));
         Assertions.assertEquals(ERROR_MESSAGE_INCORRECT_SURNAME_TEXT, registrationPage.getErrorMessageText("Фамилия *"));
@@ -89,5 +90,33 @@ public class RegistrationTest extends BaseTest {
         Assertions.assertEquals(ERROR_MESSAGE_PHONE_TEXT, registrationPage.getErrorMessagePhoneText());
         Assertions.assertEquals(ERROR_MESSAGE_INCORRECT_PASSWORD_TEXT, registrationPage.getErrorMessagePasswordText());
         Assertions.assertEquals(ERROR_MESSAGE_AGREEMENT_TEXT, registrationPage.getErrorMessageAgreementText());
+    }
+
+    @Test
+    public void checkIncorrectPassword() {
+        registrationPage.fillInputCredential("password", "qwerty");
+        registrationPage.fillInputCredential("passwordAgain", "qwerty");
+        registrationPage.clickSubmitButton();
+        Assertions.assertEquals(ERROR_MESSAGE_IDENTICAL_PASSWORD_TEXT, registrationPage.getErrorMessagePasswordText());
+    }
+
+    @Test
+    public void checkCorrectInput() {
+        registrationPage.clickCheckBox("emall.by");
+        registrationPage.clickCheckBox("evropochta.by");
+        registrationPage.clickCheckBox("Е-везунчики");
+        registrationPage.fillInputCredential("name", "Ivan");
+        registrationPage.fillInputCredential("surname", "Ivanov");
+        registrationPage.fillInputCredential("patronymic", "Ivanovich");
+        registrationPage.fillInputCredential("phone", "296550011");
+        registrationPage.fillInputCredential("email", "test@test.com");
+        registrationPage.fillInputCredential("password", "Qwerty123");
+        registrationPage.fillInputCredential("passwordAgain", "Qwerty123");
+        registrationPage.clickCheckBoxAgreementButton();
+        registrationPage.clickNextSubmitButton();
+        registrationPage.clickSubmitSelectAllButton();
+        registrationPage.clickAgreementSubmitButton();
+        registrationPage.clickSubmitButton();
+        Assertions.assertEquals(TITLE_CREATE_ACCOUNT_TEXT, registrationPage.getTitleCreateAccountText());
     }
 }
