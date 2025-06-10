@@ -1,3 +1,5 @@
+package ui.test;
+
 import by.itacademy.timoshenko.edostavka.ui.pages.login.LoginPage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

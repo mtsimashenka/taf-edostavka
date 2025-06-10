@@ -1,3 +1,5 @@
+package ui.test;
+
 import by.itacademy.timoshenko.edostavka.ui.pages.login.LoginPage;
 import by.itacademy.timoshenko.edostavka.ui.pages.password.PasswordPage;
 import org.junit.jupiter.api.Assertions;
@@ -5,7 +7,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 
-public class PasswordTest extends BaseTest{
+public class PasswordTest extends BaseTest {
     public final String TITLE_PASSWORD_TEXT = "Вход";
     public final String LABEL_PASSWORD_TEXT = "Пароль";
     public final String LABEL_PHONE_TEXT = "Номер телефона";
@@ -39,15 +41,23 @@ public class PasswordTest extends BaseTest{
 
     @Test
     public void checkInputWithoutPassword() {
-        passwordPage.fillInputWithoutPassword("tel", "222222222");
+        passwordPage.fillInputCredential("tel", "222222222");
         passwordPage.clickSubmitButton();
         Assertions.assertEquals(ERROR_MESSAGE_CREDENTIAL_TEXT, passwordPage.getErrorMessageText());
     }
 
     @Test
     public void checkInputWithoutPhoneNumber() {
-        passwordPage.fillInputWithoutPassword("current-password", "qwerty");
+        passwordPage.fillInputCredential("current-password", "qwerty");
         passwordPage.clickSubmitButton();
         Assertions.assertEquals(ERROR_MESSAGE_CREDENTIAL_WITHOUT_PHONE_TEXT, passwordPage.getErrorMessageText());
+    }
+
+    @Test
+    public void checkInputWithPasswordAndPhoneNumber() {
+        passwordPage.fillInputCredential("tel", "222222222");
+        passwordPage.fillInputCredential("current-password", "qwerty");
+        passwordPage.clickSubmitButton();
+        Assertions.assertEquals(ERROR_MESSAGE_CREDENTIAL_TEXT, passwordPage.getErrorMessageText());
     }
 }

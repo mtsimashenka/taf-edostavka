@@ -6,4 +6,5 @@ public class AgreementLocators {
     public static final String SUBMIT_BUTTON_CHOICE_ALL = "//div[@class='policy-consent_select_all__sB4P8']";
     public static final String SUBMIT_BUTTON_AGREE = "//span[text()='Согласен']";
     public static final String SUBMIT_BUTTON_NOT_AGREE = "//button[@class='touchable_button__GJNQZ']";
+    public static final String SUBMIT_BUTTON_CLOSE_SUPPORT = "//button[@class='touchable_button__GJNQZ chat_button__Ln9uz']";
 }

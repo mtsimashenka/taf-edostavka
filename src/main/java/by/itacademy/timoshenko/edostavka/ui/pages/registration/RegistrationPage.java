@@ -78,18 +78,11 @@ public class RegistrationPage {
     }
 
     public void clickNextSubmitButton() {
-        WebElement element = driver.findElement(By.xpath(String.format(RegistrationLocators.NEXT_BUTTON_SUBMIT)));
-        Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(d -> element.isDisplayed());
-        element.click();
+        driver.findElement(By.xpath(String.format(RegistrationLocators.NEXT_BUTTON_SUBMIT))).click();
     }
 
     public void clickSubmitSelectAllButton() {
-       WebElement element = driver.findElement(By.xpath(String.format(RegistrationLocators.SELECT_ALL_BUTTON_SUBMIT)));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
-        Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(d -> element.isDisplayed());
-        element.click();
+        driver.findElement(By.xpath(String.format(RegistrationLocators.SELECT_ALL_BUTTON_SUBMIT))).click();
     }
 
     public void clickAgreementSubmitButton() {
@@ -98,10 +91,6 @@ public class RegistrationPage {
 
 
     public void clickSubmitButton() {
-        WebElement element = driver.findElement(By.xpath(RegistrationLocators.BUTTON_SUBMIT));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
-        Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(d -> element.isDisplayed());
-        element.click();
+         driver.findElement(By.xpath(RegistrationLocators.BUTTON_SUBMIT)).click();
     }
 }

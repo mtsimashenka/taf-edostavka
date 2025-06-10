@@ -46,7 +46,7 @@ public class PasswordPage {
         return driver.findElement(By.xpath(PasswordLocators.ERROR_MESSAGE_CREDENTIAL)).getText();
     }
 
-    public void fillInputWithoutPassword(String input, String value) {
+    public void fillInputCredential(String input, String value) {
         driver.findElement(By.xpath(String.format(PasswordLocators.INPUT_CREDENTIAL, input))).sendKeys(value);
     }
 
