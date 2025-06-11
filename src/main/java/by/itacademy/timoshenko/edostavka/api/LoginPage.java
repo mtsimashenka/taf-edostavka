@@ -51,4 +51,3 @@ public class LoginPage {
         return response.path("message[0]");
     }
 }
-
