@@ -2,7 +2,6 @@ package api.test;
 
 import by.itacademy.timoshenko.edostavka.api.RegistrationPage;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

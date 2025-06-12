@@ -2,13 +2,7 @@ package by.itacademy.timoshenko.edostavka.ui.pages.registration;
 
 import by.itacademy.timoshenko.edostavka.ui.driver.Driver;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Wait;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 
 public class RegistrationPage {
     private WebDriver driver;

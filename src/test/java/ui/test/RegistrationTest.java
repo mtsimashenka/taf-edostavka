@@ -2,6 +2,7 @@ package ui.test;
 
 import by.itacademy.timoshenko.edostavka.ui.pages.login.LoginPage;
 import by.itacademy.timoshenko.edostavka.ui.pages.registration.RegistrationPage;
+import com.github.javafaker.Faker;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -77,13 +78,14 @@ public class RegistrationTest extends BaseTest {
 
     @Test
     public void checkIncorrectInput() {
+        Faker faker = new Faker();
         registrationPage.fillInputCredential("name", "1234");
         registrationPage.fillInputCredential("surname", "1234");
         registrationPage.fillInputCredential("patronymic", "1234");
         registrationPage.fillInputCredential("phone", "000000000");
         registrationPage.fillInputCredential("email", "test@test.xyz");
-        registrationPage.fillInputCredential("password", "qwert");
-        registrationPage.fillInputCredential("passwordAgain", "1234");
+        registrationPage.fillInputCredential("password", faker.internet().password());
+        registrationPage.fillInputCredential("passwordAgain", faker.internet().password());
         registrationPage.clickSubmitButton();
         Assertions.assertEquals(ERROR_MESSAGE_INCORRECT_NAME_TEXT, registrationPage.getErrorMessageText("Имя *"));
         Assertions.assertEquals(ERROR_MESSAGE_INCORRECT_SURNAME_TEXT, registrationPage.getErrorMessageText("Фамилия *"));
