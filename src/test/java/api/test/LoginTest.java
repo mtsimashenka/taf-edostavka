@@ -2,7 +2,6 @@ package api.test;
 
 import by.itacademy.timoshenko.edostavka.api.LoginPage;
 import com.github.javafaker.Faker;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertAll;
@@ -22,10 +21,14 @@ public class LoginTest {
     }
 
     @Test
-    public void testMessage(){
+    public void testMessageWithCredential(){
         Faker faker = new Faker();
         LoginPage loginPage = new LoginPage("375296550011", faker.internet().password());
-        Assertions.assertEquals("Неверный логин или пароль", loginPage.getMessage());
+
+        assertAll(
+                "Grouped Assertions of User",
+                () -> assertEquals(422, loginPage.getStatusCode(), "StatusCode should be 422"),
+                () -> assertEquals("Неверный логин или пароль", loginPage.getMessage())
+        );
     }
 }
-

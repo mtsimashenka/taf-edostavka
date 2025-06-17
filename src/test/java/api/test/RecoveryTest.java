@@ -19,4 +19,15 @@ public class RecoveryTest {
                 () -> assertEquals("surname", recoveryPage.getInvalidFieldSurname())
         );
     }
+
+    @Test
+    public void testMessageWithCredential() {
+        RecoveryPage recoveryPage = new RecoveryPage("375292222222", "Sidorov");
+
+        assertAll(
+                "Grouped Assertions of User",
+                () -> assertEquals("Пожалуйста, убедитесь, что правильно ввели фамилию и телефон", recoveryPage.getPhoneMessage()),
+                () -> assertEquals(400, recoveryPage.getStatusCode())
+        );
+    }
 }
