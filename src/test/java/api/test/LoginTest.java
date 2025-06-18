@@ -8,6 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LoginTest {
+
     @Test
     public void testLoginStatusCode() {
         LoginPage loginPage = new LoginPage();
