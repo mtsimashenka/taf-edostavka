@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 public class BasePage {
 
+    private String MAIN_PAGE_URL = "https://edostavka.by";
     private static final String SUBMIT_BUTTON_COOKIE_LOCATOR = "//button[@class='btn btn_size_medium btn_colour_black cookies_button__qWM6Y']";
     private static final String SUBMIT_BUTTON_LOGIN_LOCATOR = "//button[@class='touchable_button__GJNQZ actions_action__button__OiPrx']";
 
@@ -16,7 +17,7 @@ public class BasePage {
     }
 
     public void open() {
-        driver.get("https://edostavka.by");
+        driver.get(MAIN_PAGE_URL);
         clickCloseCookie();
         clickLoginProfile();
     }

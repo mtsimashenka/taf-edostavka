@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 public class Driver {
+    private static Duration DEFAULT_IMPLICITLY_WAIT_SECONDS = Duration.ofSeconds(4);
     private static WebDriver driver;
 
     private Driver() {
@@ -15,7 +16,7 @@ public class Driver {
         if (driver == null) {
             driver = new ChromeDriver();
             driver.manage().window().maximize();
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
+            driver.manage().timeouts().implicitlyWait(DEFAULT_IMPLICITLY_WAIT_SECONDS);
         }
         return driver;
     }
