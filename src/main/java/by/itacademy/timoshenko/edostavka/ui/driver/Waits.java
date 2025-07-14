@@ -1,4 +1,39 @@
 package by.itacademy.timoshenko.edostavka.ui.driver;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
+
 public class Waits {
+
+    public static WebElement waitForElementToBeVisible(WebDriver driver, By locator, int timeoutInSeconds) {
+        Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    // Ожидание кликабельности элемента
+    public static WebElement waitForElementToBeClickable(WebDriver driver, WebElement element, int timeoutInSeconds) {
+        Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+        return wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
+
+    // Удаление атрибута 'disabled' через JavaScript
+    public static void enableElement(WebDriver driver, WebElement element) {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].removeAttribute('disabled');", element);
+    }
+
+    // Ожидание, пока текст в элементе не станет непустым
+    public static String waitForTextToBePresent(WebDriver driver, By locator, int timeoutInSeconds) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+        return wait.until((WebDriver d) -> {
+            WebElement element = d.findElement(locator);
+            return element.getText().isEmpty() ? null : element.getText();
+        });
+    }
 }

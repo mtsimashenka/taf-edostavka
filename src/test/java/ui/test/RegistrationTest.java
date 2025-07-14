@@ -2,7 +2,6 @@ package ui.test;
 
 import by.itacademy.timoshenko.edostavka.ui.pages.login.LoginPage;
 import by.itacademy.timoshenko.edostavka.ui.pages.registration.RegistrationPage;
-import com.github.javafaker.Faker;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -35,6 +34,26 @@ public class RegistrationTest extends BaseTest {
     public final String ERROR_MESSAGE_INCORRECT_EMAIL_TEXT = "Адрес почты введен некорректно";
     public final String ERROR_MESSAGE_INCORRECT_PASSWORD_TEXT = "Пароли не совпадают";
     public final String ERROR_MESSAGE_IDENTICAL_PASSWORD_TEXT = "Пароли не соответствуют правилам";
+    public final String CHECKBOX_EMAIL = "emall.by";
+    public final String CHECKBOX_EVROPOCHTA = "evropochta.by";
+    public final String CHECKBOX_EVEZUNCHIKI = "Е-везунчики";
+    public final String CHECKBOX_EDOSTAVKA = "edostavka.by";
+    public final String NAME_FIELD = "name";
+    public final String SURNAME_FIELD = "surname";
+    public final String PATRONYMIC_FIELD = "patronymic";
+    public final String PHONE_FIELD = "phone";
+    public final String EMAIL_FIELD = "email";
+    public final String PASSWORD_FIELD = "password";
+    public final String PASSWORD_AGAIN_FIELD = "passwordAgain";
+    public final String INCORRECT_CREDENTIAL = "1234";
+    public final String INCORRECT_PHONE_NUMBER = "000000000";
+    public final String INCORRECT_EMAIL = "test@test.xyz";
+    public final String CORRECT_PASSWORD = "Qwerty1234";
+    public final String CORRECT_PHONE = "296550011";
+    public final String CORRECT_EMAIL = "test@test.com";
+    public final String CORRECT_NAME = "Ivan";
+    public final String CORRECT_SURNAME = "Ivanov";
+    public final String CORRECT_PATRONYMIC = "Ivanovich";
 
 
     protected LoginPage loginPage;
@@ -54,23 +73,23 @@ public class RegistrationTest extends BaseTest {
         Assertions.assertEquals(COMMIT_PASSWORD_TEXT, registrationPage.getCommitPasswordText());
         Assertions.assertEquals(LABEL_PHONE_NUMBER_TEXT, registrationPage.getLabelPhoneNumberText());
         Assertions.assertEquals(LINK_I_AGREE_TEXT, registrationPage.getLinkImAgreeText());
-        Assertions.assertEquals(CHECKBOX_EMAIL_TEXT, registrationPage.getCheckBoxText("emall.by"));
-        Assertions.assertEquals(CHECKBOX_EVROPOCHTA_TEXT, registrationPage.getCheckBoxText("evropochta.by"));
-        Assertions.assertEquals(CHECKBOX_EVEZUNCHIKI_TEXT, registrationPage.getCheckBoxText("Е-везунчики"));
-        Assertions.assertEquals(CHECKBOX_EDOSTAVKA_TEXT, registrationPage.getCheckBoxText("edostavka.by"));
-        Assertions.assertEquals(LABEL_NAME_TEXT, registrationPage.getLabelCredentialText("Имя *"));
-        Assertions.assertEquals(LABEL_SURNAME_TEXT, registrationPage.getLabelCredentialText("Фамилия *"));
-        Assertions.assertEquals(LABEL_PATRONYMIC_TEXT, registrationPage.getLabelCredentialText("Отчество"));
-        Assertions.assertEquals(LABEL_EMAIL_TEXT, registrationPage.getLabelCredentialText("Email"));
-        Assertions.assertEquals(LABEL_PASSWORD_TEXT, registrationPage.getLabelCredentialText("Пароль"));
-        Assertions.assertEquals(LABEL_PASSWORD_AGAIN, registrationPage.getLabelCredentialText("Повторите пароль"));
+        Assertions.assertEquals(CHECKBOX_EMAIL_TEXT, registrationPage.getCheckBoxText(CHECKBOX_EMAIL));
+        Assertions.assertEquals(CHECKBOX_EVROPOCHTA_TEXT, registrationPage.getCheckBoxText(CHECKBOX_EVROPOCHTA));
+        Assertions.assertEquals(CHECKBOX_EVEZUNCHIKI_TEXT, registrationPage.getCheckBoxText(CHECKBOX_EVEZUNCHIKI));
+        Assertions.assertEquals(CHECKBOX_EDOSTAVKA_TEXT, registrationPage.getCheckBoxText(CHECKBOX_EDOSTAVKA));
+        Assertions.assertEquals(LABEL_NAME_TEXT, registrationPage.getLabelCredentialText(LABEL_NAME_TEXT));
+        Assertions.assertEquals(LABEL_SURNAME_TEXT, registrationPage.getLabelCredentialText(LABEL_SURNAME_TEXT));
+        Assertions.assertEquals(LABEL_PATRONYMIC_TEXT, registrationPage.getLabelCredentialText(LABEL_PATRONYMIC_TEXT));
+        Assertions.assertEquals(LABEL_EMAIL_TEXT, registrationPage.getLabelCredentialText(LABEL_EMAIL_TEXT));
+        Assertions.assertEquals(LABEL_PASSWORD_TEXT, registrationPage.getLabelCredentialText(LABEL_PASSWORD_TEXT));
+        Assertions.assertEquals(LABEL_PASSWORD_AGAIN, registrationPage.getLabelCredentialText(LABEL_PASSWORD_AGAIN));
     }
 
     @Test
     public void checkEmptyInput() {
         registrationPage.clickSubmitButton();
-        Assertions.assertEquals(ERROR_MESSAGE_NAME_TEXT, registrationPage.getErrorMessageText("Имя *"));
-        Assertions.assertEquals(ERROR_MESSAGE_SURNAME_TEXT, registrationPage.getErrorMessageText("Фамилия *"));
+        Assertions.assertEquals(ERROR_MESSAGE_NAME_TEXT, registrationPage.getErrorMessageText(LABEL_NAME_TEXT));
+        Assertions.assertEquals(ERROR_MESSAGE_SURNAME_TEXT, registrationPage.getErrorMessageText(LABEL_SURNAME_TEXT));
         Assertions.assertEquals(ERROR_MESSAGE_PHONE_TEXT, registrationPage.getErrorMessagePhoneText());
         Assertions.assertEquals(ERROR_MESSAGE_PASSWORD_TEXT, registrationPage.getErrorMessagePasswordText());
         Assertions.assertEquals(ERROR_MESSAGE_AGREEMENT_TEXT, registrationPage.getErrorMessageAgreementText());
@@ -78,19 +97,18 @@ public class RegistrationTest extends BaseTest {
 
     @Test
     public void checkIncorrectInput() {
-        Faker faker = new Faker();
-        registrationPage.fillInputCredential("name", "1234");
-        registrationPage.fillInputCredential("surname", "1234");
-        registrationPage.fillInputCredential("patronymic", "1234");
-        registrationPage.fillInputCredential("phone", "000000000");
-        registrationPage.fillInputCredential("email", "test@test.xyz");
-        registrationPage.fillInputCredential("password", faker.internet().password());
-        registrationPage.fillInputCredential("passwordAgain", faker.internet().password());
+        registrationPage.fillInputCredential(NAME_FIELD, INCORRECT_CREDENTIAL);
+        registrationPage.fillInputCredential(SURNAME_FIELD, INCORRECT_CREDENTIAL);
+        registrationPage.fillInputCredential(PATRONYMIC_FIELD, INCORRECT_CREDENTIAL);
+        registrationPage.fillInputCredential(PHONE_FIELD, INCORRECT_PHONE_NUMBER);
+        registrationPage.fillInputCredential(EMAIL_FIELD, INCORRECT_EMAIL);
+        registrationPage.fillInputCredential(PASSWORD_FIELD, faker.internet().password());
+        registrationPage.fillInputCredential(PASSWORD_AGAIN_FIELD, faker.internet().password());
         registrationPage.clickSubmitButton();
-        Assertions.assertEquals(ERROR_MESSAGE_INCORRECT_NAME_TEXT, registrationPage.getErrorMessageText("Имя *"));
-        Assertions.assertEquals(ERROR_MESSAGE_INCORRECT_SURNAME_TEXT, registrationPage.getErrorMessageText("Фамилия *"));
-        Assertions.assertEquals(ERROR_MESSAGE_INCORRECT_PATRONYMIC_TEXT, registrationPage.getErrorMessageText("Отчество"));
-        Assertions.assertEquals(ERROR_MESSAGE_INCORRECT_EMAIL_TEXT, registrationPage.getErrorMessageText("Email"));
+        Assertions.assertEquals(ERROR_MESSAGE_INCORRECT_NAME_TEXT, registrationPage.getErrorMessageText(LABEL_NAME_TEXT));
+        Assertions.assertEquals(ERROR_MESSAGE_INCORRECT_SURNAME_TEXT, registrationPage.getErrorMessageText(LABEL_SURNAME_TEXT));
+        Assertions.assertEquals(ERROR_MESSAGE_INCORRECT_PATRONYMIC_TEXT, registrationPage.getErrorMessageText(LABEL_PATRONYMIC_TEXT));
+        Assertions.assertEquals(ERROR_MESSAGE_INCORRECT_EMAIL_TEXT, registrationPage.getErrorMessageText(LABEL_EMAIL_TEXT));
         Assertions.assertEquals(ERROR_MESSAGE_PHONE_TEXT, registrationPage.getErrorMessagePhoneText());
         Assertions.assertEquals(ERROR_MESSAGE_INCORRECT_PASSWORD_TEXT, registrationPage.getErrorMessagePasswordText());
         Assertions.assertEquals(ERROR_MESSAGE_AGREEMENT_TEXT, registrationPage.getErrorMessageAgreementText());
@@ -98,24 +116,24 @@ public class RegistrationTest extends BaseTest {
 
     @Test
     public void checkIncorrectPassword() {
-        registrationPage.fillInputCredential("password", "qwerty");
-        registrationPage.fillInputCredential("passwordAgain", "qwerty");
+        registrationPage.fillInputCredential(PASSWORD_FIELD, CORRECT_PASSWORD);
+        registrationPage.fillInputCredential(PASSWORD_AGAIN_FIELD, CORRECT_PASSWORD);
         registrationPage.clickSubmitButton();
         Assertions.assertEquals(ERROR_MESSAGE_IDENTICAL_PASSWORD_TEXT, registrationPage.getErrorMessagePasswordText());
     }
 
     @Test
     public void checkCorrectInput() {
-        registrationPage.clickCheckBox("emall.by");
-        registrationPage.clickCheckBox("evropochta.by");
-        registrationPage.clickCheckBox("Е-везунчики");
-        registrationPage.fillInputCredential("name", "Ivan");
-        registrationPage.fillInputCredential("surname", "Ivanov");
-        registrationPage.fillInputCredential("patronymic", "Ivanovich");
-        registrationPage.fillInputCredential("phone", "296550011");
-        registrationPage.fillInputCredential("email", "test@test.com");
-        registrationPage.fillInputCredential("password", "Qwerty123");
-        registrationPage.fillInputCredential("passwordAgain", "Qwerty123");
+        registrationPage.clickCheckBox(CHECKBOX_EMAIL);
+        registrationPage.clickCheckBox(CHECKBOX_EVROPOCHTA);
+        registrationPage.clickCheckBox(CHECKBOX_EVEZUNCHIKI);
+        registrationPage.fillInputCredential(NAME_FIELD, CORRECT_NAME);
+        registrationPage.fillInputCredential(SURNAME_FIELD, CORRECT_SURNAME);
+        registrationPage.fillInputCredential(PATRONYMIC_FIELD, CORRECT_PATRONYMIC);
+        registrationPage.fillInputCredential(PHONE_FIELD, CORRECT_PHONE);
+        registrationPage.fillInputCredential(EMAIL_FIELD, CORRECT_EMAIL);
+        registrationPage.fillInputCredential(PASSWORD_FIELD, CORRECT_PASSWORD);
+        registrationPage.fillInputCredential(PASSWORD_AGAIN_FIELD, CORRECT_PASSWORD);
         registrationPage.clickCheckBoxAgreementButton();
         registrationPage.clickNextSubmitButton();
         registrationPage.clickSubmitSelectAllButton();

@@ -25,9 +25,9 @@ public class LoginTest extends BaseTest {
     public void checkAllTextLoginPage() {
         Assertions.assertEquals(TITLE_LOGIN_TEXT, loginPage.getTitleLoginText());
         Assertions.assertEquals(LABEL_NUMBER_PHONE_TEXT, loginPage.getLabelPhoneText());
-        Assertions.assertEquals(LABEL_ENTER_WITH_PASSWORD_TEXT, loginPage.getLabelButtonText("Войти по паролю"));
-        Assertions.assertEquals(LABEL_REGISTRATION_TEXT, loginPage.getLabelButtonText("Зарегистрироваться"));
-        Assertions.assertEquals(LABEL_GET_CODE_TEXT, loginPage.getLabelButtonText("Получить код"));
+        Assertions.assertEquals(LABEL_ENTER_WITH_PASSWORD_TEXT, loginPage.getLabelButtonText(LABEL_ENTER_WITH_PASSWORD_TEXT));
+        Assertions.assertEquals(LABEL_REGISTRATION_TEXT, loginPage.getLabelButtonText(LABEL_REGISTRATION_TEXT));
+        Assertions.assertEquals(LABEL_GET_CODE_TEXT, loginPage.getLabelButtonText(LABEL_GET_CODE_TEXT));
     }
 
     @Test

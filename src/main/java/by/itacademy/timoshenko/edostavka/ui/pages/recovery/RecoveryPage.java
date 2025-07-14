@@ -1,17 +1,14 @@
 package by.itacademy.timoshenko.edostavka.ui.pages.recovery;
 
 import by.itacademy.timoshenko.edostavka.ui.driver.Driver;
-import by.itacademy.timoshenko.edostavka.ui.pages.password.PasswordLocators;
+import by.itacademy.timoshenko.edostavka.ui.driver.Waits;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Wait;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
 
 public class RecoveryPage {
+    public static int DEFAULT_WAIT_SECONDS = 10;
     private WebDriver driver;
 
     public RecoveryPage() {
@@ -37,10 +34,10 @@ public class RecoveryPage {
 
     public void clickSubmitButton() {
         WebElement element = driver.findElement(By.xpath(RecoveryLocators.BUTTON_SUBMIT));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].removeAttribute('disabled');", element);
-        Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(4));
-        wait.until(d -> element.isDisplayed());
-        element.click();
+        Waits.enableElement(driver, element);
+        WebElement visibleElement = Waits.waitForElementToBeVisible(driver, By.xpath(RecoveryLocators.BUTTON_SUBMIT), DEFAULT_WAIT_SECONDS);
+        WebElement clickableElement = Waits.waitForElementToBeClickable(driver, visibleElement, DEFAULT_WAIT_SECONDS);
+        clickableElement.click();
     }
 
     public void clickInputCredential(String input) {
@@ -48,6 +45,6 @@ public class RecoveryPage {
     }
 
     public String getErrorMessageText() {
-        return driver.findElement(By.xpath(RecoveryLocators.ERROR_MESSAGE_CREDENTIAL)).getText();
+        return Waits.waitForTextToBePresent(driver, By.xpath(RecoveryLocators.ERROR_MESSAGE_CREDENTIAL), DEFAULT_WAIT_SECONDS);
     }
 }

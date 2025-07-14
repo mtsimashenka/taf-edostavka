@@ -2,16 +2,13 @@ package by.itacademy.timoshenko.edostavka.ui.pages.password;
 
 
 import by.itacademy.timoshenko.edostavka.ui.driver.Driver;
+import by.itacademy.timoshenko.edostavka.ui.driver.Waits;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Wait;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 
 public class PasswordPage {
+    public static int DEFAULT_WAIT_SECONDS = 4;
     private WebDriver driver;
 
     public PasswordPage() {
@@ -52,16 +49,16 @@ public class PasswordPage {
 
     public void clickSubmitButton() {
         WebElement element = driver.findElement(By.xpath(PasswordLocators.SUBMIT_BUTTON));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].removeAttribute('disabled');", element);
-        Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(4));
-        wait.until(d -> element.isDisplayed());
-        element.click();
+        Waits.enableElement(driver, element);
+        Waits.waitForElementToBeVisible(driver, By.xpath(PasswordLocators.SUBMIT_BUTTON), DEFAULT_WAIT_SECONDS);
+        WebElement clickableElement = Waits.waitForElementToBeClickable(driver, element, DEFAULT_WAIT_SECONDS);
+        clickableElement.click();
     }
 
     public void clickLinkForgetPassword() {
         WebElement element = driver.findElement(By.xpath(PasswordLocators.LINK_FORGET_PASSWORD));
-        Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(d -> element.isDisplayed());
-        element.click();
+        WebElement visibleElement = Waits.waitForElementToBeVisible(driver, By.xpath(PasswordLocators.LINK_FORGET_PASSWORD), DEFAULT_WAIT_SECONDS);
+        WebElement clickableElement = Waits.waitForElementToBeClickable(driver, visibleElement, DEFAULT_WAIT_SECONDS);
+        clickableElement.click();
     }
 }
