@@ -1,10 +1,14 @@
 package by.itacademy.timoshenko.edostavka.ui.pages.registration;
 
 import by.itacademy.timoshenko.edostavka.ui.driver.Driver;
+import by.itacademy.timoshenko.edostavka.ui.driver.Waits;
+import by.itacademy.timoshenko.edostavka.ui.pages.recovery.RecoveryLocators;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class RegistrationPage {
+    public static int DEFAULT_WAIT_SECONDS = 10;
     private WebDriver driver;
 
     public RegistrationPage() {
@@ -72,7 +76,11 @@ public class RegistrationPage {
     }
 
     public void clickNextSubmitButton() {
-        driver.findElement(By.xpath(String.format(RegistrationLocators.NEXT_BUTTON_SUBMIT))).click();
+        WebElement element = driver.findElement(By.xpath(String.format(RegistrationLocators.NEXT_BUTTON_SUBMIT)));
+        Waits.enableElement(driver, element);
+        WebElement visibleElement = Waits.waitForElementToBeVisible(driver, By.xpath(RegistrationLocators.NEXT_BUTTON_SUBMIT), DEFAULT_WAIT_SECONDS);
+        WebElement clickableElement = Waits.waitForElementToBeClickable(driver, visibleElement, DEFAULT_WAIT_SECONDS);
+        clickableElement.click();
     }
 
     public void clickSubmitSelectAllButton() {

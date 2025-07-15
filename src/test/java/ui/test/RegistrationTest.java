@@ -48,6 +48,7 @@ public class RegistrationTest extends BaseTest {
     public final String INCORRECT_CREDENTIAL = "1234";
     public final String INCORRECT_PHONE_NUMBER = "000000000";
     public final String INCORRECT_EMAIL = "test@test.xyz";
+    public final String INCORRECT_PASSWORD = "qwer1";
     public final String CORRECT_PASSWORD = "Qwerty1234";
     public final String CORRECT_PHONE = "296550011";
     public final String CORRECT_EMAIL = "test@test.com";
@@ -116,8 +117,8 @@ public class RegistrationTest extends BaseTest {
 
     @Test
     public void checkIncorrectPassword() {
-        registrationPage.fillInputCredential(PASSWORD_FIELD, CORRECT_PASSWORD);
-        registrationPage.fillInputCredential(PASSWORD_AGAIN_FIELD, CORRECT_PASSWORD);
+        registrationPage.fillInputCredential(PASSWORD_FIELD, INCORRECT_PASSWORD);
+        registrationPage.fillInputCredential(PASSWORD_AGAIN_FIELD, INCORRECT_PASSWORD);
         registrationPage.clickSubmitButton();
         Assertions.assertEquals(ERROR_MESSAGE_IDENTICAL_PASSWORD_TEXT, registrationPage.getErrorMessagePasswordText());
     }
