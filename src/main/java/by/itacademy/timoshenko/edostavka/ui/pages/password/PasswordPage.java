@@ -50,14 +50,13 @@ public class PasswordPage {
     public void clickSubmitButton() {
         WebElement element = driver.findElement(By.xpath(PasswordLocators.SUBMIT_BUTTON));
         Waits.enableElement(driver, element);
-        Waits.waitForElementToBeVisible(driver, By.xpath(PasswordLocators.SUBMIT_BUTTON), DEFAULT_WAIT_SECONDS);
-        WebElement clickableElement = Waits.waitForElementToBeClickable(driver, element, DEFAULT_WAIT_SECONDS);
+        WebElement visibleElement = Waits.waitForElementToBeVisible(driver, By.xpath(PasswordLocators.SUBMIT_BUTTON), DEFAULT_WAIT_SECONDS);
+        WebElement clickableElement = Waits.waitForElementToBeClickable(driver, visibleElement, DEFAULT_WAIT_SECONDS);
         clickableElement.click();
     }
 
     public void clickLinkForgetPassword() {
-        WebElement element = driver.findElement(By.xpath(PasswordLocators.LINK_FORGET_PASSWORD));
-        WebElement visibleElement = Waits.waitForElementToBeVisible(driver, By.xpath(PasswordLocators.LINK_FORGET_PASSWORD), DEFAULT_WAIT_SECONDS);
+       WebElement visibleElement = Waits.waitForElementToBeVisible(driver, By.xpath(PasswordLocators.LINK_FORGET_PASSWORD), DEFAULT_WAIT_SECONDS);
         WebElement clickableElement = Waits.waitForElementToBeClickable(driver, visibleElement, DEFAULT_WAIT_SECONDS);
         clickableElement.click();
     }

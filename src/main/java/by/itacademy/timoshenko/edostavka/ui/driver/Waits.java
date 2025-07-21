@@ -27,13 +27,4 @@ public class Waits {
     public static void enableElement(WebDriver driver, WebElement element) {
         ((JavascriptExecutor) driver).executeScript("arguments[0].removeAttribute('disabled');", element);
     }
-
-    // Ожидание, пока текст в элементе не станет непустым
-    public static String waitForTextToBePresent(WebDriver driver, By locator, int timeoutInSeconds) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
-        return wait.until((WebDriver d) -> {
-            WebElement element = d.findElement(locator);
-            return element.getText().isEmpty() ? null : element.getText();
-        });
-    }
 }

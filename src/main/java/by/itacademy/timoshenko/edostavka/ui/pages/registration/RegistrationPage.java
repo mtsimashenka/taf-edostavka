@@ -76,7 +76,7 @@ public class RegistrationPage {
     }
 
     public void clickNextSubmitButton() {
-        WebElement element = driver.findElement(By.xpath(String.format(RegistrationLocators.NEXT_BUTTON_SUBMIT)));
+        WebElement element = driver.findElement(By.xpath(RegistrationLocators.NEXT_BUTTON_SUBMIT));
         Waits.enableElement(driver, element);
         WebElement visibleElement = Waits.waitForElementToBeVisible(driver, By.xpath(RegistrationLocators.NEXT_BUTTON_SUBMIT), DEFAULT_WAIT_SECONDS);
         WebElement clickableElement = Waits.waitForElementToBeClickable(driver, visibleElement, DEFAULT_WAIT_SECONDS);

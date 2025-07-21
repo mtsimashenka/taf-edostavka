@@ -45,6 +45,7 @@ public class RecoveryPage {
     }
 
     public String getErrorMessageText() {
-        return Waits.waitForTextToBePresent(driver, By.xpath(RecoveryLocators.ERROR_MESSAGE_CREDENTIAL), DEFAULT_WAIT_SECONDS);
+        WebElement visibleElement = Waits.waitForElementToBeVisible(driver, By.xpath(RecoveryLocators.ERROR_MESSAGE_CREDENTIAL), DEFAULT_WAIT_SECONDS);
+        return visibleElement.getText();
     }
 }

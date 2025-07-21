@@ -2,15 +2,15 @@ package by.itacademy.timoshenko.edostavka.ui.pages.login;
 
 
 import by.itacademy.timoshenko.edostavka.ui.driver.Driver;
+import by.itacademy.timoshenko.edostavka.ui.driver.Waits;
+import by.itacademy.timoshenko.edostavka.utils.Utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Wait;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 
 public class LoginPage {
+    public static int DEFAULT_WAIT_SECONDS = 4;
+    public final static String PHONE_NUMBER_INCORRECT = "2222";
     private WebDriver driver;
 
     public LoginPage() {
@@ -34,11 +34,11 @@ public class LoginPage {
     }
 
     public void fillInputCorrectNumberPhone() {
-        driver.findElement(By.xpath(LoginLocators.INPUT_PHONE)).sendKeys("222222222");
+        driver.findElement(By.xpath(LoginLocators.INPUT_PHONE)).sendKeys(Utils.generateRandomPhoneNumber());
     }
 
     public void fillInputIncorrectNumberPhone() {
-        driver.findElement(By.xpath(LoginLocators.INPUT_PHONE)).sendKeys("2222");
+        driver.findElement(By.xpath(LoginLocators.INPUT_PHONE)).sendKeys(PHONE_NUMBER_INCORRECT);
     }
 
     public String getErrorMessageText() {
@@ -51,9 +51,8 @@ public class LoginPage {
 
     public void clickSubmitButtonRegistration() {
         WebElement element = driver.findElement(By.xpath(LoginLocators.SUBMIT_BUTTON_REGISTRATION));
-        Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(d -> element.isDisplayed());
-        element.click();
+        WebElement clickableElement = Waits.waitForElementToBeClickable(driver, element, DEFAULT_WAIT_SECONDS);
+        clickableElement.click();
     }
 
     public void clickSubmitButtonSupport() {
