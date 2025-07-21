@@ -2,7 +2,6 @@ package by.itacademy.timoshenko.edostavka.ui.pages.registration;
 
 import by.itacademy.timoshenko.edostavka.ui.driver.Driver;
 import by.itacademy.timoshenko.edostavka.ui.driver.Waits;
-import by.itacademy.timoshenko.edostavka.ui.pages.recovery.RecoveryLocators;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -90,7 +89,6 @@ public class RegistrationPage {
     public void clickAgreementSubmitButton() {
         driver.findElement(By.xpath(String.format(RegistrationLocators.AGREEMENT_BUTTON_SUBMIT))).click();
     }
-
 
     public void clickSubmitButton() {
          driver.findElement(By.xpath(RegistrationLocators.BUTTON_SUBMIT)).click();
