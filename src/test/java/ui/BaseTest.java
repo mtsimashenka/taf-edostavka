@@ -1,4 +1,4 @@
-package ui.test;
+package ui;
 
 import by.itacademy.timoshenko.edostavka.ui.driver.Driver;
 import by.itacademy.timoshenko.edostavka.ui.pages.BasePage;

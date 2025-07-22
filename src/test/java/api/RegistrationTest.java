@@ -1,4 +1,4 @@
-package api.test;
+package api;
 
 import by.itacademy.timoshenko.edostavka.api.RegistrationPage;
 import org.junit.jupiter.api.Test;

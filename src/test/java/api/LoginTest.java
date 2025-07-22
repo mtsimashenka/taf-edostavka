@@ -1,4 +1,4 @@
-package api.test;
+package api;
 
 import by.itacademy.timoshenko.edostavka.api.LoginPage;
 import by.itacademy.timoshenko.edostavka.utils.Utils;
