@@ -2,16 +2,27 @@ package ui;
 
 import by.itacademy.timoshenko.edostavka.ui.pages.search.SearchPage;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class SearchTest {
+public class SearchTest extends BaseTest {
+
+    public static String TITLE_SEARCH = "Поиск товаров";
+    protected SearchPage searchPage;
+
+    @BeforeEach
+    public void setUp() {
+        searchPage = new SearchPage();
+    }
 
     @Test
-    public void test() {
-        String search = "сникерс";
-        SearchPage searchPage = new SearchPage();
-        String body = searchPage.doSearch(search);
+    public void checkAllTextSearchPage() {
+        Assertions.assertEquals(TITLE_SEARCH, searchPage.getSearchInputTextTitle());
+    }
 
-        Assertions.assertTrue(body.contains(search), "по запросу" + search + "не найден");
+    @Test
+    public void checkInputProduct() {
+        searchPage.clickInputSearch();
+        searchPage.inputProductInSearch();
     }
 }

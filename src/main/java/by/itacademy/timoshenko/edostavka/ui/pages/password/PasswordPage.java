@@ -14,40 +14,40 @@ public class PasswordPage {
     public static int DEFAULT_WAIT_SECONDS = 4;
 
     public String getTitlePasswordText() {
-        return Driver.getWebElementByXpath(By.xpath(PasswordLocators.TITLE_PASSWORD)).getText();
+        return Driver.getWebElement(By.xpath(PasswordLocators.TITLE_PASSWORD)).getText();
     }
 
     public String getLabelCredentialText(String input) {
-        return Driver.getWebElementByXpath(By.xpath(String.format(PasswordLocators.LABEL_CREDENTIAL, input))).getText();
+        return Driver.getWebElement(By.xpath(String.format(PasswordLocators.LABEL_CREDENTIAL, input))).getText();
     }
 
     public String getSubmitButtonText() {
-        return Driver.getWebElementByXpath(By.xpath(PasswordLocators.SUBMIT_BUTTON)).getText();
+        return Driver.getWebElement(By.xpath(PasswordLocators.SUBMIT_BUTTON)).getText();
     }
 
     public String getSubmitButtonRegistrationText() {
-        return Driver.getWebElementByXpath(By.xpath(PasswordLocators.SUBMIT_BUTTON_REGISTRATION)).getText();
+        return Driver.getWebElement(By.xpath(PasswordLocators.SUBMIT_BUTTON_REGISTRATION)).getText();
     }
 
     public String getSubmitButtonEnterWithPhoneText() {
-        return Driver.getWebElementByXpath(By.xpath(PasswordLocators.SUBMIT_BUTTON_ENTER_PHONE)).getText();
+        return Driver.getWebElement(By.xpath(PasswordLocators.SUBMIT_BUTTON_ENTER_PHONE)).getText();
     }
 
     public String getLinkForgetPasswordText() {
-        return Driver.getWebElementByXpath(By.xpath(PasswordLocators.LINK_FORGET_PASSWORD)).getText();
+        return Driver.getWebElement(By.xpath(PasswordLocators.LINK_FORGET_PASSWORD)).getText();
     }
 
     public String getErrorMessageText() {
-        return Driver.getWebElementByXpath(By.xpath(PasswordLocators.ERROR_MESSAGE_CREDENTIAL)).getText();
+        return Driver.getWebElement(By.xpath(PasswordLocators.ERROR_MESSAGE_CREDENTIAL)).getText();
     }
 
     public void fillInputCredential(String input, String value) {
-        Driver.getWebElementByXpath(By.xpath(String.format(PasswordLocators.INPUT_CREDENTIAL, input))).sendKeys(value);
+        Driver.getWebElement(By.xpath(String.format(PasswordLocators.INPUT_CREDENTIAL, input))).sendKeys(value);
     }
 
     public void clickSubmitButton() {
         logger.info("clickSubmitButton start");
-        WebElement element = Driver.getWebElementByXpath(By.xpath(PasswordLocators.SUBMIT_BUTTON));
+        WebElement element = Driver.getWebElement(By.xpath(PasswordLocators.SUBMIT_BUTTON));
         Waits.enableElement(Driver.getDriver(), element);
         WebElement visibleElement = Waits.waitForElementToBeVisible(Driver.getDriver(), By.xpath(PasswordLocators.SUBMIT_BUTTON), DEFAULT_WAIT_SECONDS);
         WebElement clickableElement = Waits.waitForElementToBeClickable(Driver.getDriver(), visibleElement, DEFAULT_WAIT_SECONDS);

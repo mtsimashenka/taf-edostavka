@@ -33,7 +33,7 @@ public class Driver {
         }
     }
 
-    public static WebElement getWebElementByXpath(By byXpath) {
+    public static WebElement getWebElement(By byXpath) {
         logger.info(String.format("Получиение элемента по локатору %s", byXpath));
         return driver.findElement(byXpath);
     }

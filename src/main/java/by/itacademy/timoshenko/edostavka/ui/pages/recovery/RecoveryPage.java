@@ -15,25 +15,25 @@ public class RecoveryPage {
 
 
     public Boolean isDisplayedTitleRecoveryPageText() {
-        WebElement element = Driver.getWebElementByXpath(By.xpath(RecoveryLocators.TITLE_RECOVERY));
+        WebElement element = Driver.getWebElement(By.xpath(RecoveryLocators.TITLE_RECOVERY));
         return element.isDisplayed();
     }
 
     public String getSubmitButtonText() {
-        return Driver.getWebElementByXpath(By.xpath(RecoveryLocators.BUTTON_SUBMIT)).getText();
+        return Driver.getWebElement(By.xpath(RecoveryLocators.BUTTON_SUBMIT)).getText();
     }
 
     public String getCredentialText(String input) {
-        return Driver.getWebElementByXpath(By.xpath(String.format(RecoveryLocators.LABEL_CREDENTIAL, input))).getText();
+        return Driver.getWebElement(By.xpath(String.format(RecoveryLocators.LABEL_CREDENTIAL, input))).getText();
     }
 
     public void fillInputCredential(String input, String value) {
-        Driver.getWebElementByXpath(By.xpath(String.format(RecoveryLocators.INPUT_CREDENTIAL, input))).sendKeys(value);
+        Driver.getWebElement(By.xpath(String.format(RecoveryLocators.INPUT_CREDENTIAL, input))).sendKeys(value);
     }
 
     public void clickSubmitButton() {
         logger.info("clickSubmitButton start");
-        WebElement element = Driver.getWebElementByXpath(By.xpath(RecoveryLocators.BUTTON_SUBMIT));
+        WebElement element = Driver.getWebElement(By.xpath(RecoveryLocators.BUTTON_SUBMIT));
         Waits.enableElement(Driver.getDriver(), element);
         WebElement visibleElement = Waits.waitForElementToBeVisible(Driver.getDriver(), By.xpath(RecoveryLocators.BUTTON_SUBMIT), DEFAULT_WAIT_SECONDS);
         WebElement clickableElement = Waits.waitForElementToBeClickable(Driver.getDriver(), visibleElement, DEFAULT_WAIT_SECONDS);
@@ -43,7 +43,7 @@ public class RecoveryPage {
 
     public void clickInputCredential(String input) {
         logger.info("clickInputCredential start");
-        Driver.getWebElementByXpath(By.xpath(String.format(RecoveryLocators.INPUT_CREDENTIAL, input))).click();
+        Driver.getWebElement(By.xpath(String.format(RecoveryLocators.INPUT_CREDENTIAL, input))).click();
         logger.info("INPUT_CREDENTIAL clicked");
     }
 

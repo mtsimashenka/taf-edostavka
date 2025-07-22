@@ -27,13 +27,13 @@ public class BasePage {
 
     public void clickCloseCookie() {
         logger.info("clickCloseCookie start");
-        Driver.getWebElementByXpath(By.xpath(SUBMIT_BUTTON_COOKIE_LOCATOR)).click();
+        Driver.getWebElement(By.xpath(SUBMIT_BUTTON_COOKIE_LOCATOR)).click();
         logger.info("SUBMIT_BUTTON_COOKIE_LOCATOR clicked");
     }
 
     public void clickLoginProfile() {
         logger.info("clickLoginProfile start");
-        Driver.getWebElementByXpath(By.xpath(SUBMIT_BUTTON_LOGIN_LOCATOR)).click();
+        Driver.getWebElement(By.xpath(SUBMIT_BUTTON_LOGIN_LOCATOR)).click();
         logger.info("SUBMIT_BUTTON_LOGIN_LOCATOR clicked");
     }
 }
