@@ -20,7 +20,7 @@ public class BaseTest {
     @BeforeEach
     public void openHomePageAndCloseCookie() {
         BasePage basePage = new BasePage();
-        basePage.open();
+        basePage.openLoginForm();
     }
 
     @AfterEach
