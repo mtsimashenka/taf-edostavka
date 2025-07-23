@@ -111,6 +111,7 @@ public static WebElement waitForElementToBeVisible(WebDriver driver, By locator,
 ## Отчёт Allure
 
 ![Отчёт Allure](/images/allure.png)
+![Отчёт Allure](/images/graphs.png)
 
 Этот отчёт демонстрирует результаты автоматизированных тестов, выполненных на дату **7/23/2025**. Все тесты прошли успешно, что подтверждается **100% успешностью**.
 

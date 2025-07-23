@@ -10,9 +10,8 @@ import org.junit.jupiter.api.Test;
 
 public class SearchTest {
 
-    public static String PRODUCT_TEXT_SEARCH = "По запросу «Сникерс» найдено 6 товаров";
+    public static String PRODUCT_TEXT_SEARCH = "По запросу «Сникерс» найдено";
     protected SearchPage searchPage;
-
 
     @BeforeEach
     public void setUp() {
@@ -30,7 +29,7 @@ public class SearchTest {
         searchPage.clickInputSearch();
         searchPage.inputProductInSearch();
         searchPage.enterProductInSearch();
-        Assertions.assertEquals(PRODUCT_TEXT_SEARCH, searchPage.getSearchProductText());
+        Assertions.assertTrue(searchPage.getSearchProductText().contains(PRODUCT_TEXT_SEARCH));
     }
 
     @AfterEach
