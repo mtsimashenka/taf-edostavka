@@ -56,7 +56,6 @@ public class RegistrationTest extends BaseTest {
     public final String CORRECT_SURNAME = "Ivanov";
     public final String CORRECT_PATRONYMIC = "Ivanovich";
 
-
     protected LoginPage loginPage;
     protected RegistrationPage registrationPage;
 

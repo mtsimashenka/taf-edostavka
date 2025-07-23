@@ -7,12 +7,10 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-
 public class RecoveryPage {
 
     protected static final Logger logger = LogManager.getLogger();
     public static int DEFAULT_WAIT_SECONDS = 10;
-
 
     public Boolean isDisplayedTitleRecoveryPageText() {
         WebElement element = Driver.getWebElement(By.xpath(RecoveryLocators.TITLE_RECOVERY));

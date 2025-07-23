@@ -3,8 +3,6 @@ package api;
 import by.itacademy.timoshenko.edostavka.api.RecoveryPage;
 import by.itacademy.timoshenko.edostavka.utils.Utils;
 import org.junit.jupiter.api.Test;
-
-import static io.restassured.RestAssured.given;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -59,17 +57,5 @@ public class RecoveryTest {
                 () -> assertEquals(SURNAME_FIELD, recoveryPage.getInvalidFieldPhone()),
                 () -> assertEquals(STATUS_CODE_ERROR, recoveryPage.getStatusCode())
         );
-    }
-
-    @Test
-    public void test1() {
-        given()
-                .header("Web-User-Agent", "SiteEdostavka/1.0.0")
-                .header("apiToken", "JDhutdSrHfuoGzvn4M6ApT4GFUs8w9RF")
-//                .body("{\"phone\":\"" + "375292222222" + "\",\"surname\":\"" + "Sidorenko" + "\"}")
-                .body("{\"phone\":\"" + "3750000" + "\",\"surname\":\"" + "@!@$%^" + "\"}")
-//                .body("{\"phone\":\"" + "" + "\",\"surname\":\"" + "" + "\"}")
-                .when().post("https://api2.edostavka.by/api/v2/sms-recovery")
-                .then().log().all();
     }
 }

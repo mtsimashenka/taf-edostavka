@@ -8,5 +8,5 @@ public class LoginLocators {
     public final static String INPUT_PHONE = "//input[@id='tel']";
     public final static String LABEL_BUTTONS = "//span[text()='%s']";
     public final static String LABEL_NUMBER_PHONE = "//label[text()='Номер телефона']";
-    public final static String ERROR_MESSAGE_NUMBER_PHONE = "//div[@class='new-input-phone_message__H_yAc']";//div[text()='Номер введен некорректно']
+    public final static String ERROR_MESSAGE_NUMBER_PHONE = "//div[@class='new-input-phone_message__H_yAc']";
 }

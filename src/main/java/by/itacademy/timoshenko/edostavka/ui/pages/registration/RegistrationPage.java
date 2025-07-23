@@ -12,7 +12,6 @@ public class RegistrationPage {
     protected static final Logger logger = LogManager.getLogger();
     public static int DEFAULT_WAIT_SECONDS = 10;
 
-
     public String getTitleRegistrationText() {
         return Driver.getWebElement(By.xpath(RegistrationLocators.TITLE_REGISTRATION)).getText();
     }

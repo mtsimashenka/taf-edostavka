@@ -11,20 +11,19 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class Waits {
+        public static String SCRIPT_DISABLED = "arguments[0].removeAttribute('disabled');";
 
     public static WebElement waitForElementToBeVisible(WebDriver driver, By locator, int timeoutInSeconds) {
         Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
-    // Ожидание кликабельности элемента
     public static WebElement waitForElementToBeClickable(WebDriver driver, WebElement element, int timeoutInSeconds) {
         Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
         return wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
-    // Удаление атрибута 'disabled' через JavaScript
     public static void enableElement(WebDriver driver, WebElement element) {
-        ((JavascriptExecutor) driver).executeScript("arguments[0].removeAttribute('disabled');", element);
+        ((JavascriptExecutor) driver).executeScript(SCRIPT_DISABLED, element);
     }
 }

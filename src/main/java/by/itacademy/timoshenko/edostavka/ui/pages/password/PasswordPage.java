@@ -1,6 +1,5 @@
 package by.itacademy.timoshenko.edostavka.ui.pages.password;
 
-
 import by.itacademy.timoshenko.edostavka.ui.driver.Driver;
 import by.itacademy.timoshenko.edostavka.ui.driver.Waits;
 import org.apache.logging.log4j.LogManager;

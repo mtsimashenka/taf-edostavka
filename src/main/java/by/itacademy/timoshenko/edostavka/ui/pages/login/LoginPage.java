@@ -1,6 +1,5 @@
 package by.itacademy.timoshenko.edostavka.ui.pages.login;
 
-
 import by.itacademy.timoshenko.edostavka.ui.driver.Driver;
 import by.itacademy.timoshenko.edostavka.ui.driver.Waits;
 import by.itacademy.timoshenko.edostavka.utils.Utils;
