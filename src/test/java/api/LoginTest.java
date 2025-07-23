@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LoginTest {
-    public final String STATUS_CODE_ERROR = "422";
+    public final int STATUS_CODE_ERROR = 422;
     public final String PHONE_FIELD = "phone";
     public final String PHONE_LABEL = "Поле номер телефона обязательно для заполнения";
     public final String LOGIN_AND_PASSWORD_ERROR = "Неверный логин или пароль";

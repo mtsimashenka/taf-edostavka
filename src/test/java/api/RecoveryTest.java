@@ -13,8 +13,8 @@ public class RecoveryTest {
     public final String SURNAME_ERROR = "Фамилия введена неверно";
     public final String SURNAME_FIELD = "surname";
     public final String PHONE_FIELD = "phone";
-    public final String STATUS_CODE_ERROR = "422";
-    public final String STATUS_CODE_ERROR_WITH_CREDENTIAL = "400";
+    public final int STATUS_CODE_ERROR = 422;
+    public final int STATUS_CODE_ERROR_WITH_CREDENTIAL = 400;
     public final String SURNAME_AND_PHONE_LABEL = "Пожалуйста, убедитесь, что правильно ввели фамилию и телефон";
     public final String EMPTY_INPUT = "";
     public final String INCORRECT_PHONE = "3750000";
