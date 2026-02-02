@@ -23,7 +23,6 @@ public class UIConfigTest {
     public static final String LABEL_PHONE_NUMBER_TEXT = "Номер телефона";
     public static final String LABEL_SURNAME_TEXT = "Фамилия";
     public static final String LABEL_BUTTON_SUBMIT_TEXT = "Далее";
-    public static final String ERROR_MESSAGE_CREDENTIAL_WITHOUT_PHONE_TEXT = "Поле номер телефона обязательно для заполнения";
     public static final String ERROR_MESSAGE_CREDENTIAL_WITHOUT_SURNAME_TEXT = "Поле фамилия обязательно для заполнения";
     public static final String ERROR_MESSAGE_FULL_CREDENTIAL_TEXT = "Пожалуйста, убедитесь, что правильно ввели фамилию и телефон";
     public static final String ERROR_MESSAGE_INCORRECT_CREDENTIAL_TEXT = "Фамилия введена неверно";
@@ -38,17 +37,14 @@ public class UIConfigTest {
     public static final String TITLE_CREATE_ACCOUNT_TEXT = "Введите код";
     public static final String BUTTON_SUBMIT_TEXT = "Далее";
     public static final String COMMIT_PASSWORD_TEXT = "Пароль должен содержать от 8 до 50 символов, включая хотя бы одну цифру, одну строчную и одну прописную латинские буквы";
-    public static final String LABEL_PHONE_NUMBER_TEXT = "Номер телефона *";
     public static final String LINK_I_AGREE_TEXT = "политикой обработки персональных данных ЗАО «Интернет-магазин Евроопт»";
     public static final String CHECKBOX_EMAIL_TEXT = "emall.by";
     public static final String CHECKBOX_EVROPOCHTA_TEXT = "evropochta.by";
     public static final String CHECKBOX_EVEZUNCHIKI_TEXT = "Е-везунчики";
     public static final String CHECKBOX_EDOSTAVKA_TEXT = "edostavka.by";
     public static final String LABEL_NAME_TEXT = "Имя *";
-    public static final String LABEL_SURNAME_TEXT = "Фамилия *";
     public static final String LABEL_PATRONYMIC_TEXT = "Отчество";
     public static final String LABEL_EMAIL_TEXT = "Email";
-    public static final String LABEL_PASSWORD_TEXT = "Пароль";
     public static final String LABEL_PASSWORD_AGAIN = "Повторите пароль";
     public static final String ERROR_MESSAGE_NAME_TEXT = "Поле имя обязательно для заполнения";
     public static final String ERROR_MESSAGE_SURNAME_TEXT = "Поле фамилия обязательно для заполнения";
@@ -68,9 +64,7 @@ public class UIConfigTest {
     public static final String NAME_FIELD = "name";
     public static final String SURNAME_FIELD = "surname";
     public static final String PATRONYMIC_FIELD = "patronymic";
-    public static final String PHONE_FIELD = "phone";
     public static final String EMAIL_FIELD = "email";
-    public static final String PASSWORD_FIELD = "password";
     public static final String PASSWORD_AGAIN_FIELD = "passwordAgain";
     public static final String INCORRECT_CREDENTIAL = "1234";
     public static final String INCORRECT_PHONE_NUMBER = "000000000";
