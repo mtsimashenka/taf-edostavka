@@ -7,13 +7,12 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import static by.itacademy.timoshenko.edostavka.utils.UIConfig.*;
 
 public class LoginPage {
 
     protected static final Logger logger = LogManager.getLogger();
     public static int DEFAULT_WAIT_SECONDS = 4;
-    public final static String PHONE_NUMBER_INCORRECT = "2222";
-
 
     public String getTitleLoginText() {
         return Driver.getWebElement(By.xpath(LoginLocators.TITLE_LOGIN)).getText();

@@ -3,10 +3,9 @@ package by.itacademy.timoshenko.edostavka.ui.pages.search;
 import by.itacademy.timoshenko.edostavka.ui.driver.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import static by.itacademy.timoshenko.edostavka.utils.UIConfig.*;
 
 public class SearchPage {
-
-    public static String PRODUCT_SEARCH = "сникерс";
 
     public void clickInputSearch() {
         Driver.getWebElement(By.xpath(SearchLocators.INPUT_SEARCH)).click();

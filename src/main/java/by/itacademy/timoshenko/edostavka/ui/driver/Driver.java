@@ -6,7 +6,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import java.time.Duration;
 
 public class Driver {
@@ -34,7 +33,7 @@ public class Driver {
     }
 
     public static WebElement getWebElement(By byXpath) {
-        logger.info(String.format("Получиение элемента по локатору %s", byXpath));
+        logger.info(String.format("Получение элемента по локатору %s", byXpath));
         return driver.findElement(byXpath);
     }
 

@@ -1,20 +1,12 @@
 package ui;
 
 import by.itacademy.timoshenko.edostavka.ui.pages.login.LoginPage;
-import io.qameta.allure.Description;
-import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import static ui.config.UIConfigTest.*;
 
 public class LoginTest extends BaseTest {
-    public final String TITLE_LOGIN_TEXT = "Вход";
-    public final String LABEL_NUMBER_PHONE_TEXT = "Номер телефона";
-    public final String LABEL_ENTER_WITH_PASSWORD_TEXT = "Войти по паролю";
-    public final String LABEL_REGISTRATION_TEXT = "Зарегистрироваться";
-    public final String LABEL_GET_CODE_TEXT = "Получить код";
-    public final String ERROR_MESSAGE_INCORRECT_TEXT = "Номер введен некорректно";
-    public final String ERROR_MESSAGE_CORRECT_TEXT = "Пожалуйста, убедитесь, что правильно ввели телефон";
 
     protected LoginPage loginPage;
 

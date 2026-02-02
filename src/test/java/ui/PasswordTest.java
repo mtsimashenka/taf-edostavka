@@ -6,24 +6,13 @@ import by.itacademy.timoshenko.edostavka.utils.Utils;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import static ui.config.UIConfigTest.*;
 
 
 public class PasswordTest extends BaseTest {
-    public final String TITLE_PASSWORD_TEXT = "Вход";
-    public final String LABEL_PASSWORD_TEXT = "Пароль";
-    public final String LABEL_PHONE_TEXT = "Номер телефона";
-    public final String SUBMIT_BUTTON_TEXT = "Войти";
-    public final String SUBMIT_BUTTON_REGISTRATION_TEXT = "Зарегистрироваться";
-    public final String SUBMIT_BUTTON_ENTER_PHONE_TEXT = "Войти по номеру телефона";
-    public final String LINK_FORGET_PASSWORD_TEXT = "Забыли пароль?";
-    public final String ERROR_MESSAGE_CREDENTIAL_TEXT = "Неверный логин или пароль";
-    public final String ERROR_MESSAGE_CREDENTIAL_WITHOUT_PHONE_TEXT = "Поле номер телефона обязательно для заполнения";
-    public final String PHONE_FIELD = "tel";
-    public final String PASSWORD_FIELD = "current-password";
 
     protected LoginPage loginPage;
     protected PasswordPage passwordPage;
-
 
     @BeforeEach
     public void setUp() {

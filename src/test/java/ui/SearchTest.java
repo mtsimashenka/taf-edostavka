@@ -7,10 +7,10 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import static ui.config.UIConfigTest.*;
 
 public class SearchTest {
 
-    public static String PRODUCT_TEXT_SEARCH = "По запросу «Сникерс» найдено";
     protected SearchPage searchPage;
 
     @BeforeEach
