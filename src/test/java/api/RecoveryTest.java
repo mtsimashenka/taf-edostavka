@@ -1,6 +1,6 @@
 package api;
 
-import by.itacademy.timoshenko.edostavka.api.RecoveryPage;
+import by.itacademy.timoshenko.edostavka.api.RecoveryApiClient;
 import by.itacademy.timoshenko.edostavka.utils.Utils;
 
 import static api.config.ApiConfigTest.*;
@@ -14,10 +14,10 @@ public class RecoveryTest {
 
     @Test
     public void testRecovery() {
-        RecoveryPage recoveryPage = new RecoveryPage();
+        RecoveryApiClient recoveryPage = new RecoveryApiClient("", "");
 
         assertAll(
-                "Grouped Assertions of User",
+                "Проверка пустых полей",
                 () -> assertEquals(PHONE_NUMBER_LABEL, recoveryPage.getMessagePhone()),
                 () -> assertEquals(SURNAME_LABEL, recoveryPage.getMessageSurname()),
                 () -> assertEquals(STATUS_CODE_ERROR, recoveryPage.getStatusCode()),
@@ -28,10 +28,10 @@ public class RecoveryTest {
 
     @Test
     public void testMessageWithCredential() {
-        RecoveryPage recoveryPage = new RecoveryPage(Utils.generateRandomPhoneNumber(), SURNAME_CORRECT);
+        RecoveryApiClient recoveryPage = new RecoveryApiClient(Utils.generateRandomPhoneNumber(), SURNAME_CORRECT);
 
         assertAll(
-                "Grouped Assertions of User",
+                "Проверка неверных данных",
                 () -> assertEquals(SURNAME_AND_PHONE_LABEL, recoveryPage.getMessagePhone()),
                 () -> assertEquals(EMPTY_INPUT, recoveryPage.getWhatToDo()),
                 () -> assertEquals(null, recoveryPage.getPreorderGroupGuid()),
@@ -41,10 +41,10 @@ public class RecoveryTest {
 
     @Test
     public void testMessageWithIncorrectCredential() {
-        RecoveryPage recoveryPage = new RecoveryPage(INCORRECT_PHONE, INCORRECT_PASSWORD);
+        RecoveryApiClient recoveryPage = new RecoveryApiClient(INCORRECT_PHONE, INCORRECT_PASSWORD);
 
         assertAll(
-                "Grouped Assertions of User",
+                "Проверка невалидной фамилии",
                 () -> assertEquals(SURNAME_ERROR, recoveryPage.getMessagePhone()),
                 () -> assertEquals(SURNAME_FIELD, recoveryPage.getInvalidFieldPhone()),
                 () -> assertEquals(STATUS_CODE_ERROR, recoveryPage.getStatusCode())
