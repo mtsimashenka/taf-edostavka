@@ -15,7 +15,7 @@ public class RegistrationTest {
         assertAll(
                 "Проверка пустых полей",
                 () -> assertEquals(PASSWORD_FIELD, client.getPasswordText()),
-                () -> assertEquals(STATUS_CODE, client.getStatusCode()),
+                () -> assertEquals(STATUS_CODE_ERROR, client.getStatusCode()),
                 () -> assertEquals(NAME_LABEL, client.getErrorNameMessage())
         );
     }
@@ -31,7 +31,7 @@ public class RegistrationTest {
 
         assertAll(
                 "Проверка невалидного email",
-                () -> assertEquals(STATUS_CODE, client.getStatusCode()),
+                () -> assertEquals(STATUS_CODE_ERROR, client.getStatusCode()),
                 () -> assertEquals(EMAIL_FIELD, client.getEmailField())
         );
     }

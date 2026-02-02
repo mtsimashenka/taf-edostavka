@@ -18,7 +18,6 @@ public class ApiConfigTest {
     public static final String EMPTY_INPUT = "";
     public static final String INCORRECT_PHONE = "3750000";
     public static final String INCORRECT_PASSWORD = "@!@$%^";
-    public static final int STATUS_CODE = 422;
     public static final String PASSWORD_FIELD = "password";
     public static final String NAME_LABEL = "Поле имя обязательно для заполнения";
 }
