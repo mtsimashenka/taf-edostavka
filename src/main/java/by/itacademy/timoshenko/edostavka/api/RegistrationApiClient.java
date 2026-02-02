@@ -24,7 +24,7 @@ public class RegistrationApiClient {
                 "email", email,
                 "password", password,
                 "phone", phone,
-                "targets", List.of() // пустой список
+                "targets", List.of()
         );
         return given()
                 .header("Web-User-Agent", USER_AGENT)

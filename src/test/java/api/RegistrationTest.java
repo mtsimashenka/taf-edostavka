@@ -10,7 +10,7 @@ public class RegistrationTest {
 
     @Test
     public void testRegistration() {
-        RegistrationApiClient client = new RegistrationApiClient(EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, "375");
+        RegistrationApiClient client = new RegistrationApiClient(EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY_PHONE);
 
         assertAll(
                 "Проверка пустых полей",
@@ -23,10 +23,8 @@ public class RegistrationTest {
     @Test
     void shouldReturn422WhenEmailIsInvalid() {
         RegistrationApiClient client = new RegistrationApiClient(
-                "Иванов", "Иван", "Иванович",
-                "invalid-email",
-                "qwerty123",
-                VALID_PHONE
+                REGISTRATION_SURNAME, REGISTRATION_NAME, REGISTRATION_PATRONYMIC,
+                INVALID_EMAIL, CORRECT_PASSWORD, VALID_PHONE
         );
 
         assertAll(

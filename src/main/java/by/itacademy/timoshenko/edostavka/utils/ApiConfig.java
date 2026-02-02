@@ -2,8 +2,6 @@ package by.itacademy.timoshenko.edostavka.utils;
 
 public class ApiConfig {
 
-    private ApiConfig() {}
-
     public static final String BASE_URL = "https://api2.edostavka.by/api/v2/auth";
     public static final String RECOVERY_URL = "https://api2.edostavka.by/api/v2/sms-recovery";
     public static final String REGISTRATION_URL = "https://api2.edostavka.by/api/v2/registration";
