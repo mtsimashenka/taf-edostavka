@@ -3,6 +3,9 @@ package api.config;
 public class ApiConfigTest {
     private ApiConfigTest() {}
     public static final int STATUS_CODE_ERROR = 422;
+    public static final String EMPTY = "";
+    public static final String EMAIL_FIELD = null;
+    public static final String VALID_PHONE = "+375291234567";
     public static final String PHONE_FIELD = "phone";
     public static final String PHONE_LABEL = "Поле номер телефона обязательно для заполнения";
     public static final String SURNAME_CORRECT = "Sidorenko";
