@@ -1,0 +1,11 @@
+2025-07-23 13:52:24,606 INFO b.i.t.e.u.p.BasePage [main] clickCloseCookie start
+2025-07-23 13:52:24,610 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black cookies_button__qWM6Y']
+2025-07-23 13:52:25,411 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_COOKIE_LOCATOR clicked
+2025-07-23 13:52:25,411 INFO b.i.t.e.u.p.BasePage [main] clickLoginProfile start
+2025-07-23 13:52:25,412 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='touchable_button__GJNQZ actions_action__button__OiPrx']
+2025-07-23 13:52:26,082 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_LOGIN_LOCATOR clicked
+2025-07-23 13:52:26,088 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@id='tel']
+2025-07-23 13:52:26,489 INFO b.i.t.e.u.p.l.LoginPage [main] clickSubmitButton start
+2025-07-23 13:52:26,489 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@type='submit']
+2025-07-23 13:52:26,556 INFO b.i.t.e.u.p.l.LoginPage [main] SUBMIT_BUTTON clicked
+2025-07-23 13:52:26,556 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //div[@class='new-input-phone_message__H_yAc']

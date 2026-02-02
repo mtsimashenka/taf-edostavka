@@ -1,0 +1,275 @@
+2025-08-24 14:25:36,082 INFO b.i.t.e.u.p.BasePage [main] clickCloseCookie start
+2025-08-24 14:25:36,084 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black cookies_button__qWM6Y']
+2025-08-24 14:25:36,884 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_COOKIE_LOCATOR clicked
+2025-08-24 14:25:36,885 INFO b.i.t.e.u.p.BasePage [main] clickLoginProfile start
+2025-08-24 14:25:36,885 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='touchable_button__GJNQZ actions_action__button__OiPrx']
+2025-08-24 14:25:37,495 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_LOGIN_LOCATOR clicked
+2025-08-24 14:25:37,499 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //h1[@class='wrapper_title__9r4Xa']
+2025-08-24 14:25:37,801 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //label[text()='Номер телефона']
+2025-08-24 14:25:37,824 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //span[text()='Войти по паролю']
+2025-08-24 14:25:37,839 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //span[text()='Зарегистрироваться']
+2025-08-24 14:25:37,853 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //span[text()='Получить код']
+2025-08-24 14:25:39,887 INFO b.i.t.e.u.p.BasePage [main] clickCloseCookie start
+2025-08-24 14:25:39,887 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black cookies_button__qWM6Y']
+2025-08-24 14:25:40,670 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_COOKIE_LOCATOR clicked
+2025-08-24 14:25:40,670 INFO b.i.t.e.u.p.BasePage [main] clickLoginProfile start
+2025-08-24 14:25:40,670 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='touchable_button__GJNQZ actions_action__button__OiPrx']
+2025-08-24 14:25:41,289 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_LOGIN_LOCATOR clicked
+2025-08-24 14:25:41,289 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@id='tel']
+2025-08-24 14:25:41,581 INFO b.i.t.e.u.p.l.LoginPage [main] clickSubmitButton start
+2025-08-24 14:25:41,581 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@type='submit']
+2025-08-24 14:25:41,640 INFO b.i.t.e.u.p.l.LoginPage [main] SUBMIT_BUTTON clicked
+2025-08-24 14:25:41,640 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //div[@class='new-input-phone_message__H_yAc']
+2025-08-24 14:25:47,671 INFO b.i.t.e.u.p.BasePage [main] clickCloseCookie start
+2025-08-24 14:25:47,671 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black cookies_button__qWM6Y']
+2025-08-24 14:25:48,449 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_COOKIE_LOCATOR clicked
+2025-08-24 14:25:48,449 INFO b.i.t.e.u.p.BasePage [main] clickLoginProfile start
+2025-08-24 14:25:48,449 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='touchable_button__GJNQZ actions_action__button__OiPrx']
+2025-08-24 14:25:49,113 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_LOGIN_LOCATOR clicked
+2025-08-24 14:25:49,113 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@id='tel']
+2025-08-24 14:25:49,478 INFO b.i.t.e.u.p.l.LoginPage [main] clickSubmitButton start
+2025-08-24 14:25:49,478 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@type='submit']
+2025-08-24 14:25:49,537 INFO b.i.t.e.u.p.l.LoginPage [main] SUBMIT_BUTTON clicked
+2025-08-24 14:25:49,537 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //div[@class='new-input-phone_message__H_yAc']
+2025-08-24 14:25:51,487 INFO b.i.t.e.u.p.BasePage [main] clickCloseCookie start
+2025-08-24 14:25:51,487 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black cookies_button__qWM6Y']
+2025-08-24 14:25:52,318 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_COOKIE_LOCATOR clicked
+2025-08-24 14:25:52,319 INFO b.i.t.e.u.p.BasePage [main] clickLoginProfile start
+2025-08-24 14:25:52,319 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='touchable_button__GJNQZ actions_action__button__OiPrx']
+2025-08-24 14:25:52,966 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_LOGIN_LOCATOR clicked
+2025-08-24 14:25:52,966 INFO b.i.t.e.u.p.l.LoginPage [main] clickSubmitButtonEnterWithPassword start
+2025-08-24 14:25:52,966 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black btn_type_secondary login_button__zjbHA login_enter_button__WJQjN']
+2025-08-24 14:25:53,318 INFO b.i.t.e.u.p.l.LoginPage [main] SUBMIT_BUTTON_ENTER_WITH_PASSWORD clicked
+2025-08-24 14:25:53,318 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@id='tel']
+2025-08-24 14:25:53,377 INFO b.i.t.e.u.p.p.PasswordPage [main] clickSubmitButton start
+2025-08-24 14:25:53,377 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //form[@class='password_form__ECumm']//button[@type='submit']
+2025-08-24 14:25:53,635 INFO b.i.t.e.u.p.p.PasswordPage [main] SUBMIT_BUTTON clicked
+2025-08-24 14:25:53,635 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //div[@class='password_error_message__KRNDP']
+2025-08-24 14:25:55,754 INFO b.i.t.e.u.p.BasePage [main] clickCloseCookie start
+2025-08-24 14:25:55,755 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black cookies_button__qWM6Y']
+2025-08-24 14:25:56,573 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_COOKIE_LOCATOR clicked
+2025-08-24 14:25:56,573 INFO b.i.t.e.u.p.BasePage [main] clickLoginProfile start
+2025-08-24 14:25:56,573 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='touchable_button__GJNQZ actions_action__button__OiPrx']
+2025-08-24 14:25:57,233 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_LOGIN_LOCATOR clicked
+2025-08-24 14:25:57,233 INFO b.i.t.e.u.p.l.LoginPage [main] clickSubmitButtonEnterWithPassword start
+2025-08-24 14:25:57,233 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black btn_type_secondary login_button__zjbHA login_enter_button__WJQjN']
+2025-08-24 14:25:57,476 INFO b.i.t.e.u.p.l.LoginPage [main] SUBMIT_BUTTON_ENTER_WITH_PASSWORD clicked
+2025-08-24 14:25:57,476 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@id='tel']
+2025-08-24 14:25:57,539 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@id='current-password']
+2025-08-24 14:25:57,743 INFO b.i.t.e.u.p.p.PasswordPage [main] clickSubmitButton start
+2025-08-24 14:25:57,743 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //form[@class='password_form__ECumm']//button[@type='submit']
+2025-08-24 14:25:57,814 INFO b.i.t.e.u.p.p.PasswordPage [main] SUBMIT_BUTTON clicked
+2025-08-24 14:25:57,814 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //div[@class='password_error_message__KRNDP']
+2025-08-24 14:25:59,861 INFO b.i.t.e.u.p.BasePage [main] clickCloseCookie start
+2025-08-24 14:25:59,862 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black cookies_button__qWM6Y']
+2025-08-24 14:26:00,668 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_COOKIE_LOCATOR clicked
+2025-08-24 14:26:00,668 INFO b.i.t.e.u.p.BasePage [main] clickLoginProfile start
+2025-08-24 14:26:00,668 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='touchable_button__GJNQZ actions_action__button__OiPrx']
+2025-08-24 14:26:01,326 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_LOGIN_LOCATOR clicked
+2025-08-24 14:26:01,326 INFO b.i.t.e.u.p.l.LoginPage [main] clickSubmitButtonEnterWithPassword start
+2025-08-24 14:26:01,326 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black btn_type_secondary login_button__zjbHA login_enter_button__WJQjN']
+2025-08-24 14:26:01,556 INFO b.i.t.e.u.p.l.LoginPage [main] SUBMIT_BUTTON_ENTER_WITH_PASSWORD clicked
+2025-08-24 14:26:01,557 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //h1[@class='wrapper_title__9r4Xa']
+2025-08-24 14:26:01,575 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //label[text()='Номер телефона']
+2025-08-24 14:26:01,600 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //label[text()='Пароль']
+2025-08-24 14:26:01,762 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //form[@class='password_form__ECumm']//button[@type='submit']
+2025-08-24 14:26:01,775 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_white password_button__Pt0gU']
+2025-08-24 14:26:01,788 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black btn_type_secondary password_button__Pt0gU password_enter_phone_button__S9Fzj']
+2025-08-24 14:26:01,801 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //a[@class='password_forget_password__3_z8M']
+2025-08-24 14:26:03,983 INFO b.i.t.e.u.p.BasePage [main] clickCloseCookie start
+2025-08-24 14:26:03,983 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black cookies_button__qWM6Y']
+2025-08-24 14:26:04,676 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_COOKIE_LOCATOR clicked
+2025-08-24 14:26:04,676 INFO b.i.t.e.u.p.BasePage [main] clickLoginProfile start
+2025-08-24 14:26:04,676 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='touchable_button__GJNQZ actions_action__button__OiPrx']
+2025-08-24 14:26:05,370 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_LOGIN_LOCATOR clicked
+2025-08-24 14:26:05,371 INFO b.i.t.e.u.p.l.LoginPage [main] clickSubmitButtonEnterWithPassword start
+2025-08-24 14:26:05,371 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black btn_type_secondary login_button__zjbHA login_enter_button__WJQjN']
+2025-08-24 14:26:05,535 INFO b.i.t.e.u.p.l.LoginPage [main] SUBMIT_BUTTON_ENTER_WITH_PASSWORD clicked
+2025-08-24 14:26:05,535 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@id='current-password']
+2025-08-24 14:26:05,836 INFO b.i.t.e.u.p.p.PasswordPage [main] clickSubmitButton start
+2025-08-24 14:26:05,836 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //form[@class='password_form__ECumm']//button[@type='submit']
+2025-08-24 14:26:05,918 INFO b.i.t.e.u.p.p.PasswordPage [main] SUBMIT_BUTTON clicked
+2025-08-24 14:26:05,918 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //div[@class='password_error_message__KRNDP']
+2025-08-24 14:26:07,986 INFO b.i.t.e.u.p.BasePage [main] clickCloseCookie start
+2025-08-24 14:26:07,986 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black cookies_button__qWM6Y']
+2025-08-24 14:26:08,855 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_COOKIE_LOCATOR clicked
+2025-08-24 14:26:08,855 INFO b.i.t.e.u.p.BasePage [main] clickLoginProfile start
+2025-08-24 14:26:08,855 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='touchable_button__GJNQZ actions_action__button__OiPrx']
+2025-08-24 14:26:09,308 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_LOGIN_LOCATOR clicked
+2025-08-24 14:26:09,308 INFO b.i.t.e.u.p.l.LoginPage [main] clickSubmitButtonEnterWithPassword start
+2025-08-24 14:26:09,309 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black btn_type_secondary login_button__zjbHA login_enter_button__WJQjN']
+2025-08-24 14:26:09,586 INFO b.i.t.e.u.p.l.LoginPage [main] SUBMIT_BUTTON_ENTER_WITH_PASSWORD clicked
+2025-08-24 14:26:09,586 INFO b.i.t.e.u.p.p.PasswordPage [main] clickLinkForgetPassword start
+2025-08-24 14:26:09,908 INFO b.i.t.e.u.p.p.PasswordPage [main] LINK_FORGET_PASSWORD clicked
+2025-08-24 14:26:09,908 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@name='tel']
+2025-08-24 14:26:09,960 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@name='family-name']
+2025-08-24 14:26:10,139 INFO b.i.t.e.u.p.r.RecoveryPage [main] clickSubmitButton start
+2025-08-24 14:26:10,139 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@type='submit']
+2025-08-24 14:26:10,210 INFO b.i.t.e.u.p.r.RecoveryPage [main] BUTTON_SUBMIT clicked
+2025-08-24 14:26:19,338 INFO b.i.t.e.u.p.BasePage [main] clickCloseCookie start
+2025-08-24 14:26:19,338 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black cookies_button__qWM6Y']
+2025-08-24 14:26:20,071 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_COOKIE_LOCATOR clicked
+2025-08-24 14:26:20,071 INFO b.i.t.e.u.p.BasePage [main] clickLoginProfile start
+2025-08-24 14:26:20,071 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='touchable_button__GJNQZ actions_action__button__OiPrx']
+2025-08-24 14:26:20,739 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_LOGIN_LOCATOR clicked
+2025-08-24 14:26:20,739 INFO b.i.t.e.u.p.l.LoginPage [main] clickSubmitButtonEnterWithPassword start
+2025-08-24 14:26:20,739 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black btn_type_secondary login_button__zjbHA login_enter_button__WJQjN']
+2025-08-24 14:26:20,956 INFO b.i.t.e.u.p.l.LoginPage [main] SUBMIT_BUTTON_ENTER_WITH_PASSWORD clicked
+2025-08-24 14:26:20,956 INFO b.i.t.e.u.p.p.PasswordPage [main] clickLinkForgetPassword start
+2025-08-24 14:26:21,269 INFO b.i.t.e.u.p.p.PasswordPage [main] LINK_FORGET_PASSWORD clicked
+2025-08-24 14:26:21,269 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@name='tel']
+2025-08-24 14:26:21,321 INFO b.i.t.e.u.p.r.RecoveryPage [main] clickInputCredential start
+2025-08-24 14:26:21,321 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@name='family-name']
+2025-08-24 14:26:21,550 INFO b.i.t.e.u.p.r.RecoveryPage [main] INPUT_CREDENTIAL clicked
+2025-08-24 14:26:21,550 INFO b.i.t.e.u.p.r.RecoveryPage [main] clickSubmitButton start
+2025-08-24 14:26:21,550 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@type='submit']
+2025-08-24 14:26:21,621 INFO b.i.t.e.u.p.r.RecoveryPage [main] BUTTON_SUBMIT clicked
+2025-08-24 14:26:23,557 INFO b.i.t.e.u.p.BasePage [main] clickCloseCookie start
+2025-08-24 14:26:23,557 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black cookies_button__qWM6Y']
+2025-08-24 14:26:24,419 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_COOKIE_LOCATOR clicked
+2025-08-24 14:26:24,419 INFO b.i.t.e.u.p.BasePage [main] clickLoginProfile start
+2025-08-24 14:26:24,419 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='touchable_button__GJNQZ actions_action__button__OiPrx']
+2025-08-24 14:26:25,069 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_LOGIN_LOCATOR clicked
+2025-08-24 14:26:25,069 INFO b.i.t.e.u.p.l.LoginPage [main] clickSubmitButtonEnterWithPassword start
+2025-08-24 14:26:25,069 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black btn_type_secondary login_button__zjbHA login_enter_button__WJQjN']
+2025-08-24 14:26:25,283 INFO b.i.t.e.u.p.l.LoginPage [main] SUBMIT_BUTTON_ENTER_WITH_PASSWORD clicked
+2025-08-24 14:26:25,283 INFO b.i.t.e.u.p.p.PasswordPage [main] clickLinkForgetPassword start
+2025-08-24 14:26:25,583 INFO b.i.t.e.u.p.p.PasswordPage [main] LINK_FORGET_PASSWORD clicked
+2025-08-24 14:26:25,583 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@name='tel']
+2025-08-24 14:26:25,646 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@name='family-name']
+2025-08-24 14:26:25,941 INFO b.i.t.e.u.p.r.RecoveryPage [main] clickSubmitButton start
+2025-08-24 14:26:25,942 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@type='submit']
+2025-08-24 14:26:26,023 INFO b.i.t.e.u.p.r.RecoveryPage [main] BUTTON_SUBMIT clicked
+2025-08-24 14:26:34,739 INFO b.i.t.e.u.p.BasePage [main] clickCloseCookie start
+2025-08-24 14:26:34,739 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black cookies_button__qWM6Y']
+2025-08-24 14:26:35,518 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_COOKIE_LOCATOR clicked
+2025-08-24 14:26:35,519 INFO b.i.t.e.u.p.BasePage [main] clickLoginProfile start
+2025-08-24 14:26:35,519 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='touchable_button__GJNQZ actions_action__button__OiPrx']
+2025-08-24 14:26:36,171 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_LOGIN_LOCATOR clicked
+2025-08-24 14:26:36,171 INFO b.i.t.e.u.p.l.LoginPage [main] clickSubmitButtonEnterWithPassword start
+2025-08-24 14:26:36,172 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black btn_type_secondary login_button__zjbHA login_enter_button__WJQjN']
+2025-08-24 14:26:36,526 INFO b.i.t.e.u.p.l.LoginPage [main] SUBMIT_BUTTON_ENTER_WITH_PASSWORD clicked
+2025-08-24 14:26:36,526 INFO b.i.t.e.u.p.p.PasswordPage [main] clickLinkForgetPassword start
+2025-08-24 14:26:36,816 INFO b.i.t.e.u.p.p.PasswordPage [main] LINK_FORGET_PASSWORD clicked
+2025-08-24 14:26:36,817 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@name='family-name']
+2025-08-24 14:26:37,063 INFO b.i.t.e.u.p.r.RecoveryPage [main] clickSubmitButton start
+2025-08-24 14:26:37,063 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@type='submit']
+2025-08-24 14:26:37,139 INFO b.i.t.e.u.p.r.RecoveryPage [main] BUTTON_SUBMIT clicked
+2025-08-24 14:26:45,704 INFO b.i.t.e.u.p.BasePage [main] clickCloseCookie start
+2025-08-24 14:26:45,705 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black cookies_button__qWM6Y']
+2025-08-24 14:26:46,515 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_COOKIE_LOCATOR clicked
+2025-08-24 14:26:46,515 INFO b.i.t.e.u.p.BasePage [main] clickLoginProfile start
+2025-08-24 14:26:46,515 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='touchable_button__GJNQZ actions_action__button__OiPrx']
+2025-08-24 14:26:47,161 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_LOGIN_LOCATOR clicked
+2025-08-24 14:26:47,161 INFO b.i.t.e.u.p.l.LoginPage [main] clickSubmitButtonEnterWithPassword start
+2025-08-24 14:26:47,161 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black btn_type_secondary login_button__zjbHA login_enter_button__WJQjN']
+2025-08-24 14:26:47,532 INFO b.i.t.e.u.p.l.LoginPage [main] SUBMIT_BUTTON_ENTER_WITH_PASSWORD clicked
+2025-08-24 14:26:47,532 INFO b.i.t.e.u.p.p.PasswordPage [main] clickLinkForgetPassword start
+2025-08-24 14:26:47,817 INFO b.i.t.e.u.p.p.PasswordPage [main] LINK_FORGET_PASSWORD clicked
+2025-08-24 14:26:47,817 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //div[@id='__next']//h1[text()='Восстановление пароля']
+2025-08-24 14:26:48,015 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@type='submit']
+2025-08-24 14:26:48,034 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //label[@class='new-input-phone_label__ykMt6']
+2025-08-24 14:26:48,047 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //label[@class='input_label__7sem_']
+2025-08-24 14:26:50,037 INFO b.i.t.e.u.p.BasePage [main] clickCloseCookie start
+2025-08-24 14:26:50,037 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black cookies_button__qWM6Y']
+2025-08-24 14:26:50,835 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_COOKIE_LOCATOR clicked
+2025-08-24 14:26:50,835 INFO b.i.t.e.u.p.BasePage [main] clickLoginProfile start
+2025-08-24 14:26:50,835 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='touchable_button__GJNQZ actions_action__button__OiPrx']
+2025-08-24 14:26:51,507 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_LOGIN_LOCATOR clicked
+2025-08-24 14:26:51,508 INFO b.i.t.e.u.p.l.LoginPage [main] clickSubmitButtonRegistration start
+2025-08-24 14:26:51,508 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_white login_button__zjbHA']
+2025-08-24 14:26:51,709 INFO b.i.t.e.u.p.l.LoginPage [main] SUBMIT_BUTTON_REGISTRATION clicked
+2025-08-24 14:26:51,709 INFO b.i.t.e.u.p.r.RegistrationPage [main] clickCheckBox  start
+2025-08-24 14:26:51,709 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //li[@aria-label='emall.by']
+2025-08-24 14:26:52,090 INFO b.i.t.e.u.p.r.RegistrationPage [main] CHECKBOX_LABEL clicked
+2025-08-24 14:26:52,090 INFO b.i.t.e.u.p.r.RegistrationPage [main] clickCheckBox  start
+2025-08-24 14:26:52,090 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //li[@aria-label='evropochta.by']
+2025-08-24 14:26:52,130 INFO b.i.t.e.u.p.r.RegistrationPage [main] CHECKBOX_LABEL clicked
+2025-08-24 14:26:52,130 INFO b.i.t.e.u.p.r.RegistrationPage [main] clickCheckBox  start
+2025-08-24 14:26:52,130 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //li[@aria-label='Е-везунчики']
+2025-08-24 14:26:52,188 INFO b.i.t.e.u.p.r.RegistrationPage [main] CHECKBOX_LABEL clicked
+2025-08-24 14:26:52,188 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@name='name']
+2025-08-24 14:26:52,239 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@name='surname']
+2025-08-24 14:26:52,286 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@name='patronymic']
+2025-08-24 14:26:52,333 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@name='phone']
+2025-08-24 14:26:52,379 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@name='email']
+2025-08-24 14:26:52,436 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@name='password']
+2025-08-24 14:26:52,487 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@name='passwordAgain']
+2025-08-24 14:26:52,542 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //div[@class='consent-form_agreement__dg77R']//span[@class='checkbox__pseudo']
+2025-08-24 14:26:52,647 INFO b.i.t.e.u.p.r.RegistrationPage [main] clickNextSubmitButton start
+2025-08-24 14:26:52,647 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black policy-consent_scroll_to_bottom_button__hrzhC']
+2025-08-24 14:26:52,725 INFO b.i.t.e.u.p.r.RegistrationPage [main] NEXT_BUTTON_SUBMIT clicked
+2025-08-24 14:26:52,725 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //div[@class='policy-consent_select_all__sB4P8']
+2025-08-24 14:26:55,787 INFO b.i.t.e.u.p.BasePage [main] clickCloseCookie start
+2025-08-24 14:26:55,787 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black cookies_button__qWM6Y']
+2025-08-24 14:26:56,633 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_COOKIE_LOCATOR clicked
+2025-08-24 14:26:56,633 INFO b.i.t.e.u.p.BasePage [main] clickLoginProfile start
+2025-08-24 14:26:56,633 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='touchable_button__GJNQZ actions_action__button__OiPrx']
+2025-08-24 14:26:57,285 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_LOGIN_LOCATOR clicked
+2025-08-24 14:26:57,285 INFO b.i.t.e.u.p.l.LoginPage [main] clickSubmitButtonRegistration start
+2025-08-24 14:26:57,285 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_white login_button__zjbHA']
+2025-08-24 14:26:57,691 INFO b.i.t.e.u.p.l.LoginPage [main] SUBMIT_BUTTON_REGISTRATION clicked
+2025-08-24 14:26:57,691 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black']
+2025-08-24 14:26:58,119 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //label[text()='Имя *']//following-sibling::div
+2025-08-24 14:27:04,244 INFO b.i.t.e.u.p.BasePage [main] clickCloseCookie start
+2025-08-24 14:27:04,244 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black cookies_button__qWM6Y']
+2025-08-24 14:27:05,036 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_COOKIE_LOCATOR clicked
+2025-08-24 14:27:05,036 INFO b.i.t.e.u.p.BasePage [main] clickLoginProfile start
+2025-08-24 14:27:05,036 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='touchable_button__GJNQZ actions_action__button__OiPrx']
+2025-08-24 14:27:05,677 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_LOGIN_LOCATOR clicked
+2025-08-24 14:27:05,677 INFO b.i.t.e.u.p.l.LoginPage [main] clickSubmitButtonRegistration start
+2025-08-24 14:27:05,677 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_white login_button__zjbHA']
+2025-08-24 14:27:06,088 INFO b.i.t.e.u.p.l.LoginPage [main] SUBMIT_BUTTON_REGISTRATION clicked
+2025-08-24 14:27:06,089 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@name='password']
+2025-08-24 14:27:06,514 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@name='passwordAgain']
+2025-08-24 14:27:06,583 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black']
+2025-08-24 14:27:06,641 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //div[@class='consent-form_form_passwords___okHf']//div[@class='error_error_wrap__m39JZ']
+2025-08-24 14:27:08,627 INFO b.i.t.e.u.p.BasePage [main] clickCloseCookie start
+2025-08-24 14:27:08,627 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black cookies_button__qWM6Y']
+2025-08-24 14:27:09,433 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_COOKIE_LOCATOR clicked
+2025-08-24 14:27:09,433 INFO b.i.t.e.u.p.BasePage [main] clickLoginProfile start
+2025-08-24 14:27:09,433 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='touchable_button__GJNQZ actions_action__button__OiPrx']
+2025-08-24 14:27:10,033 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_LOGIN_LOCATOR clicked
+2025-08-24 14:27:10,034 INFO b.i.t.e.u.p.l.LoginPage [main] clickSubmitButtonRegistration start
+2025-08-24 14:27:10,034 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_white login_button__zjbHA']
+2025-08-24 14:27:10,415 INFO b.i.t.e.u.p.l.LoginPage [main] SUBMIT_BUTTON_REGISTRATION clicked
+2025-08-24 14:27:10,416 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //h1[@class='consent-form_title__e72iS']
+2025-08-24 14:27:10,795 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black']
+2025-08-24 14:27:10,808 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //p[@class='consent-form_password_note__cDqGj']
+2025-08-24 14:27:10,821 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //label[@class='new-input-phone_label__ykMt6']
+2025-08-24 14:27:10,834 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //a[@href='https://edostavkaby.tilda.ws']
+2025-08-24 14:27:10,847 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //li[@aria-label='emall.by']
+2025-08-24 14:27:10,859 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //li[@aria-label='evropochta.by']
+2025-08-24 14:27:10,886 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //li[@aria-label='Е-везунчики']
+2025-08-24 14:27:10,902 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //li[@aria-label='edostavka.by']
+2025-08-24 14:27:10,915 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //label[text()='Имя *']
+2025-08-24 14:27:10,927 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //label[text()='Фамилия *']
+2025-08-24 14:27:10,941 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //label[text()='Отчество']
+2025-08-24 14:27:10,954 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //label[text()='Email']
+2025-08-24 14:27:10,966 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //label[text()='Пароль']
+2025-08-24 14:27:10,978 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //label[text()='Повторите пароль']
+2025-08-24 14:27:13,119 INFO b.i.t.e.u.p.BasePage [main] clickCloseCookie start
+2025-08-24 14:27:13,119 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black cookies_button__qWM6Y']
+2025-08-24 14:27:13,894 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_COOKIE_LOCATOR clicked
+2025-08-24 14:27:13,895 INFO b.i.t.e.u.p.BasePage [main] clickLoginProfile start
+2025-08-24 14:27:13,895 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='touchable_button__GJNQZ actions_action__button__OiPrx']
+2025-08-24 14:27:14,425 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_LOGIN_LOCATOR clicked
+2025-08-24 14:27:14,425 INFO b.i.t.e.u.p.l.LoginPage [main] clickSubmitButtonRegistration start
+2025-08-24 14:27:14,425 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_white login_button__zjbHA']
+2025-08-24 14:27:14,706 INFO b.i.t.e.u.p.l.LoginPage [main] SUBMIT_BUTTON_REGISTRATION clicked
+2025-08-24 14:27:14,706 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@name='name']
+2025-08-24 14:27:15,117 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@name='surname']
+2025-08-24 14:27:15,184 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@name='patronymic']
+2025-08-24 14:27:15,224 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@name='phone']
+2025-08-24 14:27:15,271 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@name='email']
+2025-08-24 14:27:15,324 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@name='password']
+2025-08-24 14:27:15,371 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@name='passwordAgain']
+2025-08-24 14:27:15,426 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black']
+2025-08-24 14:27:15,477 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //label[text()='Имя *']//following-sibling::div
+2025-08-24 14:27:21,546 INFO b.i.t.e.u.p.BasePage [main] clickCloseCookie start
+2025-08-24 14:27:21,546 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black cookies_button__qWM6Y']
+2025-08-24 14:27:22,303 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_COOKIE_LOCATOR clicked
+2025-08-24 14:27:22,303 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@title='Поиск товаров']
+2025-08-24 14:27:22,879 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@title='Поиск товаров']
+2025-08-24 14:27:22,942 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@title='Поиск товаров']
+2025-08-24 14:27:23,024 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //h1[@class='typography typography_tag_h1 typography_weight_600 heading_heading__text__gP6AN heading_heading__text_level_1__7_duQ']

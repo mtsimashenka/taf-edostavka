@@ -1,17 +1,13 @@
 package api;
-
 import by.itacademy.timoshenko.edostavka.api.LoginApiClient;
 import by.itacademy.timoshenko.edostavka.utils.Utils;
 import com.github.javafaker.Faker;
 import org.junit.jupiter.api.Test;
-
+import static api.config.ApiConfigTest.*;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LoginTest {
-    public final int STATUS_CODE_ERROR = 422;
-    public final String PHONE_FIELD = "phone";
-    public final String PHONE_LABEL = "Поле номер телефона обязательно для заполнения";
 
     @Test
     public void testLoginStatusCode() {

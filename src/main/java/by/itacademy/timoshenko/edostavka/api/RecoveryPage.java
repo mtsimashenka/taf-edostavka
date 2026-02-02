@@ -1,12 +1,11 @@
 package by.itacademy.timoshenko.edostavka.api;
+import by.itacademy.timoshenko.edostavka.utils.ApiConfig;
 
 import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.given;
 
 public class RecoveryPage {
-    private final String DEFAULT_PHONE_NUMBER = "";
-    private final String DEFAULT_SURNAME = "";
 
     private Response response;
 
@@ -25,7 +24,7 @@ public class RecoveryPage {
                 .body("{\"phone\":\"\",\"surname\":\"\"}")
                 .when().post("https://api2.edostavka.by/api/v2/sms-recovery");
 
-        return getResponse(DEFAULT_PHONE_NUMBER, DEFAULT_SURNAME);
+        return getResponse(ApiConfig.DEFAULT_PHONE_NUMBER, ApiConfig.DEFAULT_SURNAME);
     }
 
     private Response getResponse(String phone, String surname) {

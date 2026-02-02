@@ -1,0 +1,11 @@
+2025-07-23 13:16:45,424 INFO b.i.t.e.u.p.BasePage [main] clickCloseCookie start
+2025-07-23 13:16:45,429 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black cookies_button__qWM6Y']
+2025-07-23 13:16:46,127 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_COOKIE_LOCATOR clicked
+2025-07-23 13:16:46,127 INFO b.i.t.e.u.p.BasePage [main] clickLoginProfile start
+2025-07-23 13:16:46,127 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='touchable_button__GJNQZ actions_action__button__OiPrx']
+2025-07-23 13:16:46,740 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_LOGIN_LOCATOR clicked
+2025-07-23 13:16:46,745 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //h1[@class='wrapper_title__9r4Xa']
+2025-07-23 13:16:47,131 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //label[text()='Номер телефона']
+2025-07-23 13:16:47,146 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //span[text()='Войти по паролю']
+2025-07-23 13:16:47,162 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //span[text()='Зарегистрироваться']
+2025-07-23 13:16:47,176 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //span[text()='Получить код']

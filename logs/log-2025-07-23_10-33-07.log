@@ -1,0 +1,7 @@
+2025-07-23 10:33:09,607 INFO b.i.t.e.u.p.BasePage [main] clickCloseCookie start
+2025-07-23 10:33:09,609 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //button[@class='btn btn_size_medium btn_colour_black cookies_button__qWM6Y']
+2025-07-23 10:33:10,388 INFO b.i.t.e.u.p.BasePage [main] SUBMIT_BUTTON_COOKIE_LOCATOR clicked
+2025-07-23 10:33:10,390 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@title='Поиск товаров']
+2025-07-23 10:33:10,996 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@title='Поиск товаров']
+2025-07-23 10:33:11,129 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //input[@title='Поиск товаров']
+2025-07-23 10:33:11,234 INFO b.i.t.e.u.d.Driver [main] Получиение элемента по локатору By.xpath: //h1[@class='typography typography_tag_h1 typography_weight_600 heading_heading__text__gP6AN heading_heading__text_level_1__7_duQ']
