@@ -1,5 +1,6 @@
 package by.itacademy.timoshenko.edostavka.ui.driver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -18,6 +19,7 @@ public class Driver {
 
     public static WebDriver getDriver() {
         if (driver == null) {
+            WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(DEFAULT_IMPLICITLY_WAIT_SECONDS);

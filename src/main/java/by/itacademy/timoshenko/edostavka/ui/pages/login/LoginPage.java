@@ -9,7 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import static by.itacademy.timoshenko.edostavka.utils.UIConfig.*;
 
-public class LoginPage {
+public class LoginPage  {
 
     protected static final Logger logger = LogManager.getLogger();
     public static int DEFAULT_WAIT_SECONDS = 4;
